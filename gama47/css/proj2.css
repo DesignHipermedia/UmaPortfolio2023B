@@ -1,0 +1,23 @@
+.navbar_container{
+    display: grid;
+    grid-template-areas: 
+    'pfp . buttons theme'
+    'name . . .'
+    ;
+}
+#pfp{
+    grid-area: pfp;
+    width: 120px;
+    height: 120px;
+}
+#name{
+    grid-area: name;
+}
+#buttons{
+    grid-area: buttons;
+    margin: 50px 0px;
+}
+#theme{
+    grid-area: theme;
+    margin: 50px 0px;
+}

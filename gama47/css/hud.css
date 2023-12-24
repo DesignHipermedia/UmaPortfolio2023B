@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.ct{
+    display: flex;
+    justify-content: space-between;
+}
+.hub_link{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}

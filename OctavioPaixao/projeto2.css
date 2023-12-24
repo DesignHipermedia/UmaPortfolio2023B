@@ -1,0 +1,22 @@
+*{
+    margin: 5px;
+    padding: 5px;
+}
+
+.containter{
+    margin: 0 auto;
+}
+
+.nav_bar{
+    background-color: azure;
+    display: flex;
+    align-items: center;
+}
+
+.img1{
+    border-radius: 6em;
+}
+
+.navBar{
+    margin-left: 600px;
+}

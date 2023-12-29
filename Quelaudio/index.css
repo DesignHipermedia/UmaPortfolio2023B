@@ -80,3 +80,25 @@ background-color: black;
     font-size:large;
     margin-left: 30px;
 }
+
+.texto_nav{
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+    height: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto1{
+    font-size: 60px;
+    width: 1100px;
+}
+.texto_principal{
+    align-items: end;
+}
+.linha{
+    height:2px ;
+    width: 1800px;
+    background-color: black;
+}

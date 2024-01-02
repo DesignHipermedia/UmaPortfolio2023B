@@ -26,10 +26,12 @@ sed do eiusmod tempor incididunt ut labore et.</div>
 .titulo{
     font-family: monospace;
     font-size: 40px;
+    line-height: 1.2;
 }
 .texto{
     font-size: 18px;
     width: 60%;
+    line-height: 1.2;
 }
 .icons{
     display: flex;

@@ -28,6 +28,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .esquerda{
     display: flex;

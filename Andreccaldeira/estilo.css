@@ -1,23 +1,45 @@
-.BARRA {
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    height: 50px;
+.container
+{
+    background-color: rgb(109, 110, 109);
 }
-.foto {
-    width: 160px;
-    border-radius: 200%;
+.imagem
+{
+    width: 200px;
+    height: 200px;
+    border: transparent 2px;
+    border-radius: 900px;
 }
-.butao1{
-    width: 160px;
-    border-radius: 10%;
+.imagemOpcoes
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
-.butao2{
-    width: 160px;
-    border-radius: 100%;
-}
-.
+
+.butao
 {
     
+    width: 100px;
+    height: 100px;
+}
+.sol
+{
+    border: transparent 2px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+.lua
+{
+    border: transparent 2px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+.butoes
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -1,151 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Hipermédia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Hipermédia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="cabeçalho">
-        <div class="quadrado">
-        <img class="foto" src="ronaldo.jpeg" alt="">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle logo_copyright" viewBox="0 0 16 16">
-            <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+  <header class="cabeçalho">
+    <div class="quadrado">
+      <img class="foto" src="guy.jpg" alt="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-c-circle logo_copyright" viewBox="0 0 16 16">
+        <path
+          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+      </svg>
+      <div class="texto_nome">DH Smith</div>
+    </div>
+    <div class="caixa_botões">
+      <button class="botão fora_esquerda">About</button>
+      <button class="botão dentro">Work</button>
+      <button class="botão fora_direita">Solutions</button>
+    </div>
+  </header>
+  <div class="intro">
+    <div class="texto_principal">I'm DH, and I turn your wildest dreams into reality.</div>
+    <p class="texto_secundario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odit ipsum maiores at nisi
+      accusantium explicabo quos corporis, necessitatibus officiis eos asperiores reiciendis.</p>
+  </div>
+  <div class="baixo_texto">
+    <div class="primeiros_botoes">
+      <button class="projeto">Start a Project</button>
+      <button class="redondo seta"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
+            fill="currentColor" />
+        </svg></button>
+    </div>
+    <div class="segundos_botoes">
+      <button class="redondo noite">
+        <svg width="30" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.2256 2.00253C9.59172 1.94346 6.93894 2.9189 4.92893 4.92891C1.02369 8.83415 1.02369 15.1658 4.92893 19.071C8.83418 22.9763 15.1658 22.9763 19.0711 19.071C21.0811 17.061 22.0565 14.4082 21.9975 11.7743C21.9796 10.9772 21.8669 10.1818 21.6595 9.40643C21.0933 9.9488 20.5078 10.4276 19.9163 10.8425C18.5649 11.7906 17.1826 12.4053 15.9301 12.6837C14.0241 13.1072 12.7156 12.7156 12 12C11.2844 11.2844 10.8928 9.97588 11.3163 8.0699C11.5947 6.81738 12.2094 5.43511 13.1575 4.08368C13.5724 3.49221 14.0512 2.90664 14.5935 2.34046C13.8182 2.13305 13.0228 2.02041 12.2256 2.00253ZM17.6569 17.6568C18.9081 16.4056 19.6582 14.8431 19.9072 13.2186C16.3611 15.2643 12.638 15.4664 10.5858 13.4142C8.53361 11.362 8.73568 7.63895 10.7814 4.09281C9.1569 4.34184 7.59434 5.09193 6.34315 6.34313C3.21895 9.46732 3.21895 14.5326 6.34315 17.6568C9.46734 20.781 14.5327 20.781 17.6569 17.6568Z"
+            fill="currentColor" />
+        </svg></button>
+      <button class="redondo dia">
+        <svg width="30" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"
+            fill="currentColor" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M11 0H13V4.06189C12.6724 4.02104 12.3387 4 12 4C11.6613 4 11.3276 4.02104 11 4.06189V0ZM7.0943 5.68018L4.22173 2.80761L2.80752 4.22183L5.6801 7.09441C6.09071 6.56618 6.56608 6.0908 7.0943 5.68018ZM4.06189 11H0V13H4.06189C4.02104 12.6724 4 12.3387 4 12C4 11.6613 4.02104 11.3276 4.06189 11ZM5.6801 16.9056L2.80751 19.7782L4.22173 21.1924L7.0943 18.3198C6.56608 17.9092 6.09071 17.4338 5.6801 16.9056ZM11 19.9381V24H13V19.9381C12.6724 19.979 12.3387 20 12 20C11.6613 20 11.3276 19.979 11 19.9381ZM16.9056 18.3199L19.7781 21.1924L21.1923 19.7782L18.3198 16.9057C17.9092 17.4339 17.4338 17.9093 16.9056 18.3199ZM19.9381 13H24V11H19.9381C19.979 11.3276 20 11.6613 20 12C20 12.3387 19.979 12.6724 19.9381 13ZM18.3198 7.0943L21.1923 4.22183L19.7781 2.80762L16.9056 5.6801C17.4338 6.09071 17.9092 6.56608 18.3198 7.0943Z"
+            fill="currentColor" />
+        </svg></button>
+    </div>
+  </div>
+  <div class="introduction">
+    <p class="paragrafo">Welcome, make yourself at home. I am a
+      multidisciplinary web designer, designing and
+      building beautiful digital products, for
+      companies around the world.</p>
+    <p class="paragrafo">I believe that design should be both functional
+      and aesthetically pleasing, and I am dedicated
+      to delivering exceptional user experiences
+      through thoughtful design and meticulous
+      attention to detail.</p>
+    <div class="separacao">
+      <a class="cv" href="">Download Resume</a>
+      <button class="seta" id="botao"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
+            fill="currentColor" />
+        </svg></button>
+    </div>
+  </div>
+  <div class="linha"></div>
+  <div class="cabecalho">
+    <div class="texto_principal" id="titulo">The work I do</div>
+    <button class="botão" id="botao_separado">All</button>
+    <button class="botão" id="botao_separado">Design</button>
+    <button class="botão" id="botao_separado">Development</button>
+  </div>
+  <div class="conjunto">
+    <div>
+      <img src="d+d1.png" class="imagem" id="img1" alt="Design + Development Exemplo">
+    </div>
+    <div class="text">
+      <div class="texto_titulo">UIDeli.com</div>
+      <p class="texto_tipo">Design + Development 2023</p>
+      <p class="texto_lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis eius aliquid odit
+        facilis repudiandae ipsum? Quisquam dolor accusamus vitae itaque molestias, corrupti saepe illo asperiores, quam
+        laudantium quas fuga debitis.</p>
+    </div>
+  </div>
+  <div class="conjunto">
+    <img src="tele.jpg" class="imagem" id="img2" alt="Telemovel Exemplo">
+    <div class="text">
+      <div class="texto_titulo">Koto Studio</div>
+      <p class="texto_tipo">Development 2023</p>
+      <p class="texto_lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique est porro rem esse vero
+        amet vitae laborum minima commodi nam, non corrupti libero modi eum nihil itaque excepturi iste harum!</p>
+    </div>
+  </div>
+  <div class="conjunto">
+    <img src="Design.png" class="imagem" id="img3" alt="Design Exemplo">
+    <div class="text">
+      <div class="texto_titulo">Switch Black</div>
+      <p class="texto_tipo">Design 2023</p>
+      <p class="texto_lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit amet autem saepe deleniti
+        quod reprehenderit id natus nostrum! Ad nobis odio minus cumque laborum. Dolor numquam praesentium voluptatum
+        tempora ab?</p>
+    </div>
+  </div>
+  <div class="conjunto">
+    <img src="Development.jpg" class="imagem" id="img4" alt="Development Exemplo">
+    <div class="text">
+      <div class="texto_titulo">ReMarket</div>
+      <p class="texto_tipo">Development 2023</p>
+      <p class="texto_lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde itaque illum fugit quaerat?
+        Vitae nobis, accusantium non voluptates reprehenderit, quaerat ducimus unde voluptatem dolore porro voluptate
+        nihil natus iste accusamus!</p>
+    </div>
+  </div>
+  <div class="conjunto">
+    <img src="blender.png" class="imagem" id="img5" alt="Blender Exemplo">
+    <div class="text">
+      <div class="texto_titulo">Blender Renders</div>
+      <p class="texto_tipo">Design + Development 2023</p>
+      <p class="texto_lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet atque labore reprehenderit
+        exercitationem, tempore nobis quae commodi debitis fugit quaerat voluptatum impedit dolores quia laboriosam
+        tempora a optio suscipit saepe.</p>
+    </div>
+  </div>
+  </div>
+  <div class="caixa_load">
+  <button class="botão" id="botao_separado">Load More</button>
+  </div>
+  <div class="parte_baixo">
+    <div>
+      <div class="header_baixo">I can I help you with</div>
+    </div>
+    <div class="ajuda">
+      <div class="tabs">
+        <div class="numeros">01</div>
+        <div class="linha_branca"></div>
+        <h2 class="texto_debaixo">Design</h2>
+        <p class="texto_debaixo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas dolor modi.</p>
+        <h3 class="texto_debaixo">Websites</h3>
+        <h3 class="texto_debaixo">Mobile Apps</h3>
+        <h3 class="texto_debaixo">Web Apps</h3>
+        <h3 class="texto_debaixo">Design Systems</h3>
+        <h3 class="texto_debaixo">Branding</h3>
+      </div>
+      <div class="tabs">
+        <div class="numeros">02</div>
+        <div class="linha_branca"></div>
+        <h2 class="texto_debaixo">Development</h2>
+        <p class="texto_debaixo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+        <h3 class="texto_debaixo">Mobile Apps</h3>
+        <h3 class="texto_debaixo">Web Apps</h3>
+
+      </div>
+      <div class="tabs">
+        <div class="numeros">03</div>
+        <div class="linha_branca"></div>
+        <h2 class="texto_debaixo">Full Package</h2>
+        <p class="texto_debaixo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, accusantium nam.
+        </p>
+        <h3 class="texto_debaixo">Design + Development</h3>
+      </div>
+    </div>
+    <div class="pacote">
+      <div class="package">Get the Full Package, Design + Development with requests &
+        revisions. No expensive hourly billing. Flat monthly rate.</div>
+      <div class="package_pausa">Pause anytime.</div>
+      <div class="caixa_preço">
+        <h1 class="preço">$2999</h1><span>/month</span>
+      </div>
+      <p class="ideal">Ideal for websites, web aps, and brand design projects, custom code solutions,
+        blogs and app dashboard design</p>
+    </div>
+    <div class="caixa_baixo_projecto">
+      <img class="img" src="guy.jpg" alt="">
+      <div class="botoes">
+        <button class="projeto">Start a project</button>
+        <button class="redondo seta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+            class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
           </svg>
-          <div class="texto_nome">DH Smith</div>
-        </div>
-        <div class="caixa_botões">
-            <button class="botão fora_esquerda">About</button>
-            <button class="botão dentro">Work</button>
-            <button class="botão fora_direita">Solutions</button>
-        </div>
-    </header>
-    <div class="intro">
-        <div class="texto_principal">I'm DH, and I turn ideas into digital experiences that people love.</div>
-        <div class="texto_secundario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odit ipsum maiores at nisi accusantium explicabo quos corporis, necessitatibus officiis eos asperiores reiciendis.</div>
+        </button>
+      </div>
     </div>
-    <div class="baixo_texto">
-        <div class="primeiros_botoes">
-        <button class="projeto">Start a Project</button>
-        <button class="redondo seta"><svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z"
-              fill="currentColor"
-            />
-          </svg></button>
-        </div>
-        <div class="segundos_botoes">
-        <button class="redondo noite"><svg width="15" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.2256 2.00253C9.59172 1.94346 6.93894 2.9189 4.92893 4.92891C1.02369 8.83415 1.02369 15.1658 4.92893 19.071C8.83418 22.9763 15.1658 22.9763 19.0711 19.071C21.0811 17.061 22.0565 14.4082 21.9975 11.7743C21.9796 10.9772 21.8669 10.1818 21.6595 9.40643C21.0933 9.9488 20.5078 10.4276 19.9163 10.8425C18.5649 11.7906 17.1826 12.4053 15.9301 12.6837C14.0241 13.1072 12.7156 12.7156 12 12C11.2844 11.2844 10.8928 9.97588 11.3163 8.0699C11.5947 6.81738 12.2094 5.43511 13.1575 4.08368C13.5724 3.49221 14.0512 2.90664 14.5935 2.34046C13.8182 2.13305 13.0228 2.02041 12.2256 2.00253ZM17.6569 17.6568C18.9081 16.4056 19.6582 14.8431 19.9072 13.2186C16.3611 15.2643 12.638 15.4664 10.5858 13.4142C8.53361 11.362 8.73568 7.63895 10.7814 4.09281C9.1569 4.34184 7.59434 5.09193 6.34315 6.34313C3.21895 9.46732 3.21895 14.5326 6.34315 17.6568C9.46734 20.781 14.5327 20.781 17.6569 17.6568Z" fill="currentColor" /></svg></button>
-        <button class="redondo dia"><svg width="15" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M11 0H13V4.06189C12.6724 4.02104 12.3387 4 12 4C11.6613 4 11.3276 4.02104 11 4.06189V0ZM7.0943 5.68018L4.22173 2.80761L2.80752 4.22183L5.6801 7.09441C6.09071 6.56618 6.56608 6.0908 7.0943 5.68018ZM4.06189 11H0V13H4.06189C4.02104 12.6724 4 12.3387 4 12C4 11.6613 4.02104 11.3276 4.06189 11ZM5.6801 16.9056L2.80751 19.7782L4.22173 21.1924L7.0943 18.3198C6.56608 17.9092 6.09071 17.4338 5.6801 16.9056ZM11 19.9381V24H13V19.9381C12.6724 19.979 12.3387 20 12 20C11.6613 20 11.3276 19.979 11 19.9381ZM16.9056 18.3199L19.7781 21.1924L21.1923 19.7782L18.3198 16.9057C17.9092 17.4339 17.4338 17.9093 16.9056 18.3199ZM19.9381 13H24V11H19.9381C19.979 11.3276 20 11.6613 20 12C20 12.3387 19.979 12.6724 19.9381 13ZM18.3198 7.0943L21.1923 4.22183L19.7781 2.80762L16.9056 5.6801C17.4338 6.09071 17.9092 6.56608 18.3198 7.0943Z" fill="currentColor" /></svg></button>    
-        </div>
+    <div class="caixa_chamada">
+      <p class="chamada">Dont't know if it fits you or not?</p>
+      <a class="chamada" id="chamada_separacao" href="">Let's have a call</a>
     </div>
+    <footer>
+      <div class="numeros">SOCIAL MEDIA</div>
+      <div class="linha_branca"></div>
+      <div class="redes_sociais">
+        <div class="caixa_sociais">
+        <img src="twitter.png" class="sociais_imagem">
+        <a>Twitter</a>
+        </div>
+        <div class="caixa_sociais">
+        <img src="linkedin.png" class="sociais_imagem">
+        <a>Linkedin</a>
+        </div>
+        <div class="caixa_sociais">
+        <img src="github.png" class="sociais_imagem">
+        <a>Github</a>
+        </div>
+        <div class="caixa_sociais">
+        <img src="dribble.png" class="sociais_imagem">
+        <a>Dribbble</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
-<style>
-    .baixo_texto{
-        height: 65px;      
-    }
-    .primeiros_botoes{
-        display: flex;
-        align-items: center;
-        height: 65px;
-    }
-    .segundos_botoes{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-top: -65px;
-        height: 65px;
-    }
-    .redondo{
-        border-radius: 100%;
-        height: 50px;
-        width: 50px;
-    }
-    .noite{
-        background-color: rgb(17, 17, 39);
-        border:rgb(17, 17, 39);
-        color: white;
-    }
-    .dia{
-        color: rgb(17, 17, 39);
-        border: white;
-    }
-    .seta{
-        background-color: rgb(122, 53, 182);
-        color: white;
-        border: rgb(122, 53, 182);
-    }
-    .projeto{
-        background-color: rgb(17, 17, 39);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
-        width: 150px;
-        height: 50px;
-        border-radius: 25px;
-        border: rgb(17, 17, 39);
-        margin-left: 25px;
-    }
-    .intro{
-        height: 150px;
-        width: 750px;
-        padding-left: 25px;
-    }
-    .texto_principal{
-        font-size:xx-large;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-bottom: 15px;
-    }
-    .texto_secundario{
-        font-size: large;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .quadrado{
-        display: flex;
-        align-items: center;
-        width: 350px;       
-    }
-    .logo_copyright{
-        padding-left: 25px;
-    }
-    .cabeçalho{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 25px;
-    }
-    .foto{
-        border-radius: 100%;
-        width: 200px;
-    }
-    .texto_nome{
-        padding-left: 5px;
-        font-family:serif
-    }
-    .caixa_botões{
-        width: 450px;
-        display: flex;
-    }
-    .botão{
-        width: 105px;
-        height: 70px;
-        background-color: rgb(238, 238, 238);
-        border: 0px;
-        font-weight: bolder;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .fora_esquerda{
-        border-top-left-radius: 35px;
-        border-bottom-left-radius: 35px;
-    }
-    .fora_direita{
-        border-top-right-radius: 35px;
-        border-bottom-right-radius: 35px;
-    }
-</style>
+
 </html>

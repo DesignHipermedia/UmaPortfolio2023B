@@ -4,77 +4,442 @@ body{
 
 
 .navegador{
-    height: 250px;
-    width: 100%;
-    background-color: antiquewhite;
+    height: 400px;
+    width: 2070px;
+    background-color: transparent ;
     display: flex;
     align-items: center;
+    
 }
 
 .icons{
-    width: 450px;
+    width: 500px;
     height: 100px;
-    background-color: rgb(171, 8, 8);
+    background-color:transparent ;
     display: flex;
     justify-content: space-around;
-    margin-left: 40%;
-    border-radius: 45px;
+    margin-left: 600px;
+    border-radius: 100px;
+    border-color: green transparent;
+    border: solid 1px;
 
+}
+
+.day_nit{
+    margin-left: 50px;
 }
 
 .about{
     background-color: transparent;
     border: 0px;
-    border-radius: 20px;
-    width: 75px;
+    width: 100px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
+    
 }
+
+.about:active:focus:hover{
+    border-color: black;
+    border-right: solid 1px;
+    width: 100px;
+    border-radius: 70px;
+}
+
 .work{
     background-color: transparent;
-    border-radius: 20px;
-    width: 77px;
+    width: 100px;
     border: 0px;
     font-size: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
 }
+
+.work:active:focus:hover{
+    border-color: black;
+    border: solid 1px;
+    width: 100px;
+    border-radius: 70px;
+}
 .solutions{
     background-color: transparent;
-    border-radius: 40px;
-    width: 75px;
     font-size: 25px;
-    border-color: transparent;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 110px;
+    border: 0px;
+    
+}
+.solutions:active:focus:hover{
+    border-color: black;
+    border-left: solid 1px;
+    width: 110px;
+    border-radius: 70px;
     
 }
 
-.solutions:active {
-    border-color: black;
-
-  }
-.day_nit{
-    margin-left: 80px;
-
-}
-  .lua{
-background-color: transparent;
+.lua{
+background-color: black;
     border-radius: 40px;
-    height: 50px;
-    width: 50px;
-    border: 0px;
+    height: 80px;
+    width: 80px;
+    
   }
 
 .sun {
-    background-color: transparent;
+    background-color: black;
     border-radius: 40px;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     border: 0px;
 }
 
 .Smith{
-    
+    width: 150px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:smaller;
+    font-size:30px;
+    margin-left: 30px;
 }
+.cont_tit{
+   display: flex;
+   flex-direction: column; 
+    margin-left: 50px;
+}
+.lorem{
+    font-size: 30px;
+    width: 700px;
+    margin-top: -50px;
+}
+.DH{
+    font-size: 80px;
+    width: 1100px;
+}
+
+.seta{
+    width: 80px;
+}
+
+.start{
+    margin: 50px;
+    width: 200px;
+    height: 90px;
+    border-radius: 70px;
+    font-size: 20px;
+    background-color: rgb(16, 16, 35);
+    color:white
+}
+
+.seta{
+    background-color: rgb(64, 0, 255);
+    color: white;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    font-size: 20px;
+    margin-left: -20px;
+}
+
+.welcome{
+    display: flex;
+    width: 1000px;
+    font-size: 65px;
+    margin-left: 900px;
+}
+
+.texto{
+    justify-content: end;
+}
+
+a:link:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.dowload{
+    margin-left: 900px;
+    font-size:30px;
+}
+
+.seta1{
+    background-color: rgb(64, 0, 255);
+    color: white;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 80px;
+    font-size: 20px;
+    margin-left: 20px; 
+    
+}
+.black_line{
+    height: 1px;
+    width: 1900px;
+    background-color: black;
+    margin-left: 60px;
+}
+
+.tit{
+    margin-left:60px;
+    font-size: 70px;
+    
+}
+
+.all{
+    width: 130px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    color:black;
+}
+
+.Development{
+
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    color:black;
+}
+
+.design{
+    width: 170px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    color:black;
+
+}
+
+.contentor1{
+    display: flex; 
+    margin-top: 100px;   
+    
+}
+.direito{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    float:right ;
+}
+
+.more{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    
+    margin-left: 850px;
+    justify-content: center;
+}
+.load{
+    display: flex;
+    font-size: 25px;
+    height: 100px;
+    background-color: white;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+}
+.esquerdo{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin-left: 200px;
+}
+
+.footer{
+    background-color: rgb(33, 16, 16);
+    padding-top: 10px;
+    margin-top: 90px;
+
+
+}
+
+.foot_tit{
+    margin-left: 40px;
+    font-size: 100px;
+    color:floralwhite;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+.help{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.line1{
+    height: 1px;
+    background-color: grey;
+    width: 500px;  
+}
+
+.line2{
+    height: 1px;
+    background-color: grey;
+    width: 500px;  
+    
+}
+.line3{
+    height: 1px;
+    background-color: grey;
+    width: 500px;  
+    
+}
+.design1{
+    font-size:50px ;
+}
+.web{
+    display: flex;
+    flex-direction: column;
+    color: floralwhite;
+    font-size: 30px;
+}
+
+.tit_01{
+    margin-left: 140px;
+    font-size: 30px;
+    width: 500px;
+    color: floralwhite;
+    display:flex;
+    flex-direction:column;
+}
+
+.design2{
+    color: floralwhite;
+    font-size: 50px;
+}
+
+
+.tit_03{
+    margin-left: 140px;
+    font-size: 30px;
+    width: 500px;
+    color: floralwhite;
+    display:flex;
+    flex-direction:column;
+    margin-left: 270px;
+
+}
+.tit_02{
+    margin-left: 290px;
+    font-size: 30px;
+    width: 500px;
+    color: floralwhite;
+    display:flex;
+    flex-direction:column;
+}
+
+.footer_container{
+    display: flex;
+}
+
+.full_package{
+    color: floralwhite;
+    font-size: 50px;
+    width: 1300px;
+    margin-left: 60px;
+}
+
+.dinheiro{
+    font-size:80px;
+    color:floralwhite;
+}
+
+.dinheiro1{
+    display: flex;
+    align-items: center;
+}
+
+.si{
+    font-size: medium;
+}
+
+.ideal{
+    color:floralwhite;
+    font-size:20px;
+    width: 730px;
+    margin-left:60px;
+}
+
+.texto_fundo{
+    display: flex;
+    align-items: center;
+    margin-left:60px
+}
+
+.project{
+    margin-top: 55px;
+    width: 200px;
+    height: 80px;
+    border-radius: 70px;
+    margin-left:30px;
+    font-size: 20px;
+    background-color: floralwhite;
+}
+
+.seta2{
+    
+    background-color: rgb(64, 0, 255);
+    color: white;
+    margin: 50px;
+    width: 80px;
+    height: 80px ;
+    border-radius: 80px;
+    font-size: 10px;
+    margin-left: 10px; 
+    margin-top: 110px;
+}
+
+
+.call{
+    color:floralwhite;
+    font-size: 20px;
+    display: flex;
+    margin-left: 60px;
+    
+}
+.under{
+    text-decoration: underline;
+    margin-left:6px
+}
+
+.social{
+    color:gray;
+    margin-left: 60px;
+
+}
+
+.line5{
+    height: 1px;
+    background-color: grey;
+    width: 1900px;  
+    margin-left: 60px;
+}
+.media{
+    margin-left: 60px;
+    color: floralwhite;
+    display: flex;  
+}
+
+.entre_imagem{
+    display: flex; 
+    flex-direction: column;
+    height: 60px;
+    align-content: normal;
+    
+}
+
+.text1{
+    margin-top:-150px;
+    font-size: 30px;
+}
+
+
+
+
+
+

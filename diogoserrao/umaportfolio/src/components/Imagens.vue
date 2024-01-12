@@ -12,12 +12,13 @@ import Botao from "./Botao.vue"
         </div>
     </div>
     <div class="imagens"> 
-        
+        <a href="/segunda">
             <div class="componente">
                 <img class="imagem" src="/subimagem1.png">
                 <div class="principal">UIDeli.com</div>
                 <div class="descricao">Desing + Development 2023</div>
             </div>
+        </a>
             <div class="componente">
                 <img class="imagem" src="/imagem2.png">
                 <div class="principal">Koto Studio</div>

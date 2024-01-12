@@ -1,12 +1,59 @@
-.foto {
-    width: 160px;
-    border-radius: 200%;
+.container
+{
+    background-color: rgb(109, 110, 109);
 }
-.butao1{
-    width: 160px;
-    border-radius: 10%;
+.imagem
+{
+    width: 200px;
+    height: 200px;
+    border: transparent 2px;
+    border-radius: 900px;
 }
-.butao2{
-    width: 160px;
-    border-radius: 100%;
+.imagemOpcoes
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.butao
+{
+    
+    width: 100px;
+    height: 100px;
+}
+.sol
+{
+    border: transparent 2px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+.lua
+{
+    border: transparent 2px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+.butoes
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.titulo
+{
+    color: blue;
+}
+.startprojet
+{
+    height: 50px;
+    width: 90px;
+}
+.seta
+{
+    height: 50px;
+    width: 90px;
 }

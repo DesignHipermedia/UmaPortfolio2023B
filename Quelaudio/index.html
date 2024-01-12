@@ -1,95 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Design Hipermédia</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navegador">
-        
-        <img src="fotos/transferir.jpg" height="200px" width="200px" style="border-radius: 70%; margin-left: 70px;">
-        <span class="Smith">@ DH Smith</span>
+      <img
+        src="fotos/black.jpg"
+        height="350px"
+        width="390px"
+        style="border-radius: 70%; margin-left: 70px"
+      />
+      <span class="Smith">@ DH Smith</span>
 
-        <div class="icons">
-            <button class="about">
-                about
-            </button>
-            <button class="work">
-                work
-            </button>
-            <button class="solutions">
-                solutions
-            </button>
-        </div>
-        <div class="day_nit">
-            <button class="lua">
-                <svg width="30px" height="30px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000">
+      <div class="icons">
+        <button class="about">about</button>
+        <button class="work">work</button>
+        <button class="solutions">solutions</button>
+      </div>
+      <div class="day_nit">
+        <button class="lua">
+          <svg
+            width="30px"
+            height="30px"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+            stroke="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                    
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                    
-                    <g id="SVGRepo_iconCarrier">
-                    
-                    <title>ionicons-v5-j</title>
-                    
-                    <path d="M160,136c0-30.62,4.51-61.61,16-88C99.57,81.27,48,159.32,48,248c0,119.29,96.71,216,216,216,88.68,0,166.73-51.57,200-128-26.39,11.49-57.38,16-88,16C256.71,352,160,255.29,160,136Z" style="fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
-                    
-                    </g>
-                    
-                    </svg>
-            </button>
-            <button class="sun">
-                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
 
-<svg id="SVGRepo_bgCarrier" stroke-width="0"/>
+            <g id="SVGRepo_iconCarrier">
+              <title>ionicons-v5-j</title>
 
-
-<svg id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-
-<svg id="SVGRepo_iconCarrier"> <circle cx="12" cy="12" r="5" stroke="#ffffff" stroke-width="1.5"/> 
-    <path d="M12 2V4" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M12 20V22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M4 12L2 12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M22 12L20 12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M19.7778 4.22266L17.5558 6.25424" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M4.22217 4.22266L6.44418 6.25424" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M6.44434 17.5557L4.22211 19.7779" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> <path d="M19.7778 19.7773L17.5558 17.5551" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/> </svg>
-
-</svg>
-            </button>
-        </div>
-    </nav>
-    <div class="texto_nav">
-        <p class="texto1">
-            I'm DH, and i turn ideas into digital experience that people Love
-
-        </p>
-        <p class="texto2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciddunt ut labore et.
-        </p>
-        <button class="start">
-            Star a project
-
+              <path
+                d="M160,136c0-30.62,4.51-61.61,16-88C99.57,81.27,48,159.32,48,248c0,119.29,96.71,216,216,216,88.68,0,166.73-51.57,200-128-26.39,11.49-57.38,16-88,16C256.71,352,160,255.29,160,136Z"
+                style="
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 32px;
+                "
+              />
+            </g>
+          </svg>
         </button>
-        <div class="principal">
-        <p class="texto_principal">
-            Welcome, make yourself at home. I am a
-            multidisciplinary web designer, designing and
-            building beautiful digital products, for
-            companies around the world.
+        <button class="sun">
+          <svg
+            width="30px"
+            height="30px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
 
-            I believe that design should be both functional
-            and aesthetically pleasing, and I am dedicated
-            to delivering exceptional user experiences
-            through thoughtful design and meticulous
-            attention to detail.
+            <g id="SVGRepo_iconCarrier">
+              <circle
+                cx="12"
+                cy="12"
+                r="5"
+                stroke="#ffffff"
+                stroke-width="1.5"
+              />
+              <path
+                d="M12 2V4"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 20V22"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 12L2 12"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M22 12L20 12"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M19.7778 4.22266L17.5558 6.25424"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4.22217 4.22266L6.44418 6.25424"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M6.44434 17.5557L4.22211 19.7779"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M19.7778 19.7773L17.5558 17.5551"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="cont_tit">
+        <p class="DH">
+            I m DH, and I turn ideas into digital
+            experiences that people love.
         </p>
-        </div>
-        <div class="linha">
-        </div>
+        <p class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et.  
+        </p>   
     </div>
-    
+    <div class="start_project">
+        <button class="start">
+            start a project
+        </button>
+        <button class="seta">
+            icon
+        </button>
 
-    
-</body>
+    </div>
+    <div class="welcome">
+        <p class="texto"> 
+        Welcome, make yourself at home. I am a
+        multidisciplinary web designer, designing and
+        building beautiful digital products, for
+        companies around the world.
+
+
+        I believe that design should be both functional
+        and aesthetically pleasing, and I am dedicated
+        to delivering exceptional user experiences
+        through thoughtful design and meticulous
+        attention to detail.
+    </p>
+
+    </div>
+    <div class="dowload">
+        <a href="">Dowload resume</a>
+          <button class="seta1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="50px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </button>
+    </div>
+        <div class="black_line">
+            
+        </div>
+        <div class="tit">
+            <p>
+                The work I do
+            </p>
+            <button class="all">
+                All
+            </button>
+            <button class="design">
+                Design
+            </button>
+            <button class="Development">
+                Development
+
+            </button>
+        </div>
+        <div class="contentor1">
+
+
+            
+            <div class="esquerdo">
+        
+                <img
+                src="fotos/black.jpg"
+                height="400px"
+                width="390px"
+                style="margin-bottom: 170px;"
+
+                />
+                <div class="entre_imagem">
+                <p class="text1">Switch Black</p>
+                <p class="text2">Design 2023</p>
+              </div>
+                <img
+                src="fotos/black.jpg"
+                height="400px"
+                width="390px"
+                style="margin-bottom: 170px"
+                />
+                <div class="entre_imagem">
+                  <p class="text1">Switch Black</p>
+                  <p class="text2">Design 2023</p>
+                </div>
+                <img
+                src="fotos/black.jpg"
+                height="400px"
+                width="390px"
+                style="margin-bottom: 170px"
+                />
+                <div class="entre_imagem">
+                  <p class="text1">Switch Black</p>
+                  <p class="text2">Design 2023</p>
+                </div>
+                </div>
+
+
+
+                <div class="direito">
+                <img
+                src="fotos/black.jpg"
+                height="400px"
+                width="390px"
+                style="margin-bottom: 170px"
+                />
+                <div class="entre_imagem">
+                  <p class="text1">Switch Black</p>
+                  <p class="text2">Design 2023</p>
+                </div>
+                <img
+                src="fotos/black.jpg"
+                height="400px"
+                width="390px"
+                style="margin-bottom: 170px"
+                />
+                <div class="entre_imagem">
+                  <p class="text1">Switch Black</p>
+                  <p class="text2">Design 2023</p>
+
+                </div>
+                <img
+                src="fotos/black.jpg"
+                height="400px"
+                width="390px"
+                style="margin-bottom: 170px"
+                />
+                <div class="entre_imagem">
+                  <p class="text1">Switch Black</p>
+                  <p class="text2">Design 2023</p>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="more">
+        <button class="load">
+          load more
+        </button>
+      </div>
+        <footer class="footer">
+          <div class="foot_tit">
+            <p>
+              I can help you with
+            </p>
+          </div>
+          <div class="help">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <div class="footer_container">
+          <div class="tit_01">
+          <p class="design1">Design</p>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et.</p>
+
+          <div class="web">
+          <p>Websites</p>
+          <p>Mobile apps </p>
+          <p>Web apps </p>
+          <p>Design systems </p>
+          <p>Branding </p>
+          </div>
+          </div>
+
+          <div class="tit_02 ">
+            <p class="design2">Development</p>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et.</p>
+            <div class="web">
+              <p>Websites</p>
+              <p>Mobile apps </p>
+              <p>Web apps </p>
+          </div>
+          </div>
+          <div class="tit_03">
+            <p class="design2">Full Package</p>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et.
+              </p>
+            <div class="web">
+              <p>Design + Development</p>
+          </div>
+        </div>
+          </div>
+          <div class="full_package">
+            <p>Get the Full Package, Design + Development with requests &
+            revisions. No expensive hourly billing. Flat monthly rate.
+            Pause anytime.
+            </p>
+            <div class="dinheiro1">
+              <p class="dinheiro">€2999</p>
+              <p class="si">/month</p>
+            </div>
+          </div>
+          <div class="ideal">
+            <p>Ideal for websites, web aps, and brand design projects, custom code solutions, blogs and
+
+              app dashboard design.</p>
+
+          </div>
+
+          <div class="texto_fundo">
+            <img
+        src="fotos/black.jpg"
+        height="100px"
+        width="100px"
+        style="border-radius: 70%; margin-left: 40px; margin-top: 50px;"
+        />
+
+
+        <button class="project">
+            Start a project
+        </button>
+
+        <button class="seta2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="50px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+
+          </div>
+
+      <div class="call">
+        <p>Don t know if fits you or not?</p> <p class="under"> Let s have a call</p>
+          
+      </div>
+
+      <div class="social">
+        SOCIAL MEDIA
+      </div>
+      <div class="line5"></div>
+
+      <div class="media">
+        <p>twitter</p>
+        <p style="margin-left: 40px;">Linkedin </p>
+        <p style="margin-left: 40px;">Github </p>
+        <p style="margin-left: 40px;">Dribbble</p>
+      </div>
+        </footer>
+  </body>
 </html>

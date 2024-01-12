@@ -12,11 +12,16 @@ import Botao from "./Botao.vue"
         </div>
     </div>
     <div class="imagens"> 
-        <div class="coluna">
+        
             <div class="componente">
                 <img class="imagem" src="/subimagem1.png">
                 <div class="principal">UIDeli.com</div>
                 <div class="descricao">Desing + Development 2023</div>
+            </div>
+            <div class="componente">
+                <img class="imagem" src="/imagem2.png">
+                <div class="principal">Koto Studio</div>
+                <div class="descricaoe">Development 2023</div>
             </div>
             <div class="componente">
                 <img class="imagem" src="/imagem3.png">
@@ -24,20 +29,13 @@ import Botao from "./Botao.vue"
                 <div class="descricao">Desing 2023</div>
             </div>
             <div class="componente">
-                <img class="imagem" src="/imagem5.png">
-                <div class="principal">Another One</div>
-                <div class="descricao">Development 2023</div>
-            </div>
-        </div>
-        <div class="coluna">
-            <div class="componente">
-                <img class="imagem" src="/imagem2.png">
-                <div class="principal">Koto Studio</div>
-                <div class="descricaoe">Development 2023</div>
-            </div>
-            <div class="componente">
                 <img class="imagem" src="/imagem4.jpg">
                 <div class="principal">ReMarket</div>
+                <div class="descricao">Development 2023</div>
+            </div>
+            <div class="componente">
+                <img class="imagem" src="/imagem5.png">
+                <div class="principal">Another One</div>
                 <div class="descricao">Development 2023</div>
             </div>
             <div class="componente">
@@ -45,7 +43,7 @@ import Botao from "./Botao.vue"
                 <div class="principal">Blender Renders</div>
                 <div class="descricao">Desing + Development 2023</div>
             </div>
-        </div>
+        
     </div>
     <div class="cabecalhofundo">
         <div class="botao">Load</div>
@@ -83,7 +81,8 @@ import Botao from "./Botao.vue"
     gap: 10px;
 }   
 .imagens{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-direction: row;
     border: 30px;
     justify-content: space-between;

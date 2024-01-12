@@ -22,17 +22,44 @@ import BotaoRedondo from "./BotaoRedondo.vue"
             </div>
             <div class="textogrande">
                 <div class="texto">
-                    <h1 class="titulo">About ReMarket</h1>
-                    <div class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
-                    <h1 class="titulo">The project</h1>
-                    <div class="descricao">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>  
+                    <div class="topicos">
+                        <h1 class="titulo">About ReMarket</h1>
+                        <div class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                        <h1 class="titulo">The project</h1>
+                        <div class="descricao">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>  
+                    </div>
                     <h1 class="titulo">Testimonials</h1>
+                        <div class="testimonials">
+                                <div class="testcontainer">
+                                    <div class="header">
+                                        <div class="headertxt">anonimo1</div>
+                                        <div class="headerft"></div>
+                                    </div>
+                                    <div class="txt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                                </div>
+                                <div class="testcontainer">
+                                    <div class="header">
+                                        <div class="headertxt">anonimo2</div>
+                                        <div class="headerft"></div>
+                                    </div>
+                                    <div class="txt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                                </div>
 
-
-
-
-
-
+                            <div class="testcontainer">
+                                <div class="header">
+                                    <div class="headertxt">anonimo3</div>
+                                    <div class="headerft"></div>
+                                </div>
+                                <div class="txt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                            </div>
+                            <div class="testcontainer">
+                                <div class="header">
+                                    <div class="headertxt">anonimo4</div>
+                                    <div class="headerft"></div>
+                                </div>
+                                <div class="txt">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -70,5 +97,31 @@ import BotaoRedondo from "./BotaoRedondo.vue"
 .website{
     display: flex;
 }
-
+.partebaixo{
+    display: flex;
+    justify-content: end;
+}
+.topicos{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.titulo{
+    font-weight: bold;
+}
+.textogrande{
+    width: 60%;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.header{
+    display: flex;
+    justify-content: end;
+}
+.headertxt{
+    border-bottom: 3px solid black;
+}
 </style>

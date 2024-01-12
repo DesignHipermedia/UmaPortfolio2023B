@@ -1,8 +1,14 @@
-<script>
-
+<script setup>
+const props = defineProps({
+    isSmall:{
+        type: Boolean,
+        default: false
+    }
+})
+    console.log(props["isSmall"])
 </script>
 <template>
-    <button class="botao">
+    <button class="botao" :class="{small: isSmall}">
 
     </button>
 </template>
@@ -14,5 +20,9 @@
         height: 60px;
         width: 60px;
         
+    }
+    .small{
+        height: 30px;
+        width: 30px;
     }
 </style>

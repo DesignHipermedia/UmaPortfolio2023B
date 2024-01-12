@@ -1,9 +1,20 @@
 <script>
-
+export default {
+  props: {
+    buttonText: {
+      type: String,
+      required: true
+    },
+    isWhite:{
+        type: Boolean,
+        default: false
+    }
+  }
+}
 </script>
 <template>
-    <button class="botao">
-        Start a project
+    <button class="botao" :class="{white:isWhite}">
+        {{ buttonText }}
     </button>
 </template>
 <style scoped>
@@ -12,5 +23,9 @@
         border-radius: 40px;
         color: white;
         padding: 14px 30px;
+    }
+    .white{
+        background-color: white;
+        color: black;
     }
 </style>

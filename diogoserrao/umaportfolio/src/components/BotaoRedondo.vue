@@ -9,7 +9,7 @@ const props = defineProps({
 </script>
 <template>
     <button class="botao" :class="{small: isSmall}">
-
+        <font-awesome-icon icon="fa-solid fa-arrow-right" />
     </button>
 </template>
 <style scoped>
@@ -19,7 +19,8 @@ const props = defineProps({
         border-radius: 50%;
         height: 60px;
         width: 60px;
-        
+        color: white;
+        font-size: large;
     }
     .small{
         height: 30px;

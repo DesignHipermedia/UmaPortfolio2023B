@@ -9,7 +9,7 @@
         <div class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt ut labore et.</div>
         <div class="icons">
-            <Botao></Botao>
+            <Botao buttonText="Start a project"></Botao>
             <BotaoRedondo></BotaoRedondo>
         </div>
     </div>

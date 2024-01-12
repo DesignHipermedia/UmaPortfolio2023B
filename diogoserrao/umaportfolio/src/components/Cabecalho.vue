@@ -16,8 +16,8 @@
             <div class="item">solutions </div>
         </div>
         <div class="icons">
-            <div class="icon lua"></div>
-            <div class="icon "></div>
+            <div class="icon lua"><font-awesome-icon icon="fa-solid fa-moon" /></div>
+            <div class="icon sol"><font-awesome-icon icon="fa-solid fa-sun" /></div>
         </div>
     </div>
   </div>
@@ -73,9 +73,17 @@
     border: 1px solid gray;
     width: 62px;
     height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .lua{
     background-color: black;
+    color: white;
+}
+.sol{
+    background-color: white;
+    color: black;
 }
 
 

@@ -118,5 +118,8 @@ import Botao from "./Botao.vue"
 .descricao{
     font-family: system-ui;
 }
+.headerft{
+    width: 100%;
+}
 
 </style>

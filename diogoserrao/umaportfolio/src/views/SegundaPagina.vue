@@ -1,5 +1,5 @@
 <script setup>
-import BotaoRedondo from "./BotaoRedondo.vue";
+import BotaoRedondo from "../components/BotaoRedondo.vue";
 </script>
 <template>
   <div class="tudo">

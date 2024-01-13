@@ -1,59 +1,314 @@
-.container
-{
-    background-color: rgb(109, 110, 109);
-}
-.imagem
-{
-    width: 200px;
-    height: 200px;
-    border: transparent 2px;
-    border-radius: 900px;
-}
-.imagemOpcoes
-{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    
+* {
+    margin: 5px;
+    padding: 5px;
 }
 
-.butao
-{
-    
-    width: 100px;
-    height: 100px;
+body {
+    background-image: rgb(255, 255, 255);
 }
-.sol
-{
-    border: transparent 2px;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
+
+.container {
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    border-bottom: solid 2px grey;
+    background-color: rgb(255, 255, 255);
 }
-.lua
-{
-    border: transparent 2px;
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
-}
-.butoes
-{
-    display:flex;
+
+.imgOptions {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.img1 {
+    width: 200px;
+    border: transparent;
+    border-radius: 10em;
+}
+
+.name {
+    position: absolute;
+    margin-left: 230px;
+    font-size: 20px;
+}
+
+.buttonsThemes {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
-.titulo
-{
-    color: blue;
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 4em;
+    width: 450px;
+    height: 60px;
 }
-.startprojet
-{
-    height: 50px;
-    width: 90px;
+
+.bInicial {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.seta
-{
-    height: 50px;
-    width: 90px;
+
+.bInicial:hover {
+    background-color: blue;
+    width: 150px;
+    height: 60px;
+    border: solid 1px black;
+    border-radius: 4em;
+}
+
+.dark,
+.light {
+    border: transparent;
+    border-radius: 4em;
+}
+
+.dark:hover {
+    background-color: #201c24;
+}
+
+.infoText {
+    width: 800px;
+}
+
+.Box {
+    font-size: 50px;
+}
+
+.Box2 {
+    font-size: 30px;
+}
+
+.divProject {
+    display: flex;
+    align-items: center;
+}
+
+.start {
+    width: 250px;
+    height: 60px;
+    border: transparent;
+    border-radius: 4em;
+    background-color: darkslateblue;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.start:hover {
+    background-color: steelblue;
+}
+
+.pointer {
+    border: transparent;
+    border-radius: 4em;
+    background-color: royalblue;
+}
+
+.bigText {
+    text-align: justify;
+    margin-left: 400px;
+    line-height: 1.5;
+    font-size: 30px;
+}
+
+.container2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    padding-top: 10px;
+    border-bottom: solid 2px grey;
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    font-size: 60px;
+}
+
+.button1,
+.button2,
+.button3 {
+    border: transparent;
+    border-radius: 4em;
+    background-color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.all {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.button1 {
+    width: 70px;
+    height: 70px;
+}
+
+.button2 {
+    width: 140px;
+    height: 70px;
+}
+
+.button3 {
+    width: 240px;
+    height: 70px;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    background-color: rgb(1, 255, 86);
+}
+
+.centerLoad {
+    display: flex;
+    justify-content: center;
+}
+
+.loader {
+    border: transparent;
+    border-radius: 4em;
+    width: 300px;
+    height: 75px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loader:hover {
+    background-color: royalblue;
+    border: solid 1px black;
+    border-radius: 4em;
+}
+
+.container3 {
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px;
+    padding-top: 10px;
+    border-bottom: solid 2px grey;
+    background-color: rgb(0, 0, 0);
+}
+
+.header3 {
+    color: white;
+}
+
+.helpTab {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    width: 300px;
+}
+
+.underBar {
+    border-bottom: solid 2px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.underSpace {
+    margin-bottom: 10px;
+}
+
+.fullPack {
+    color: white;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 45px;
+}
+
+.fullPack_ {
+    color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 45px;
+}
+
+.priceTab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.price {
+    font-size: 45px;
+}
+
+.recomendation {
+    color: white;
+    font-size: 20px;
+    width: 700px;
+}
+
+.img1-1 {
+    width: 75px;
+    border: transparent;
+    border-radius: 10em;
+}
+
+.left3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgProject {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.centerTextLink {
+    display: flex;
+    flex-direction: row;
+}
+
+.textLink {
+    color: white;
+    font-size: 20px;
+}
+
+.underBar_ {
+    border-bottom: solid 2px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 450px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    color: rgb(0, 0, 0);
 }

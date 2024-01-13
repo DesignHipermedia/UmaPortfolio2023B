@@ -11,7 +11,7 @@ import { faArrowRight, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import NotFound from './views/NotFound.vue'
 const routes = [
     { path: '/', component: Home },
-    { path: '/segunda', component: SegundaPagina },
+    { path: '/segunda/:id', component: SegundaPagina },
     { path: '/:pathMatch(.*)*', component: NotFound}
   ]
   const router = createRouter({

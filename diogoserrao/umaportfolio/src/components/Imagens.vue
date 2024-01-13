@@ -12,39 +12,48 @@ import Botao from "./Botao.vue"
         </div>
     </div>
     <div class="imagens"> 
-        <a href="/segunda">
+        <a href="/segunda/imagem1.png">
             <div class="componente">
-                <img class="imagem" src="/subimagem1.png">
+                <img class="imagem" src="/imagem1.png">
                 <div class="principal">UIDeli.com</div>
                 <div class="descricao">Desing + Development 2023</div>
             </div>
         </a>
+        <a href="/segunda/imagem2.png">
             <div class="componente">
                 <img class="imagem" src="/imagem2.png">
                 <div class="principal">Koto Studio</div>
                 <div class="descricaoe">Development 2023</div>
             </div>
+        </a>
+        <a href="/segunda/imagem3.png">
             <div class="componente">
                 <img class="imagem" src="/imagem3.png">
                 <div class="principal">Switch Black</div>
                 <div class="descricao">Desing 2023</div>
             </div>
+        </a>
+        <a href="/segunda/imagem4.jpg">
             <div class="componente">
                 <img class="imagem" src="/imagem4.jpg">
                 <div class="principal">ReMarket</div>
                 <div class="descricao">Development 2023</div>
             </div>
+        </a>
+        <a href="/segunda/imagem5.png">
             <div class="componente">
                 <img class="imagem" src="/imagem5.png">
                 <div class="principal">Another One</div>
                 <div class="descricao">Development 2023</div>
             </div>
+        </a>
+        <a href="/segunda/imagem6.jpg">
             <div class="componente">
                 <img class="imagem" src="/imagem6.jpg">
                 <div class="principal">Blender Renders</div>
                 <div class="descricao">Desing + Development 2023</div>
             </div>
-        
+        </a>
     </div>
     <div class="cabecalhofundo">
         <div class="botao">Load</div>

@@ -3,6 +3,7 @@ import BotaoRedondo from "../components/BotaoRedondo.vue";
 </script>
 <template>
   <div class="tudo">
+    
     <div class="preto"></div>
     <div class="corpo">
       <div class="cima">
@@ -12,7 +13,8 @@ import BotaoRedondo from "../components/BotaoRedondo.vue";
             Helping ReMarket give their users the best online experience.
           </h1>
         </div>
-        <img class="imagem" src="/subimagem1.png" />
+       
+        <img class="imagem" :src="`/${$route.params.id}`" />
       </div>
       <div class="baixo"></div>
     </div>
@@ -93,6 +95,10 @@ import BotaoRedondo from "../components/BotaoRedondo.vue";
   </div>
 </template>
 <style scoped>
+.tudo{
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .corpo {
   display: flex;
   flex-direction: column;
@@ -100,7 +106,7 @@ import BotaoRedondo from "../components/BotaoRedondo.vue";
   gap: 20px;
 }
 .preto {
-  background-color: red;
+  background-color: black;
   height: 100px;
   margin: 20px;
   width: 100%;

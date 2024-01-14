@@ -73,9 +73,11 @@ body {
     border: transparent;
     border-radius: 4em;
 }
-.light{
+
+.light {
     background-color: #ffffff;
 }
+
 .dark:hover {
     background-color: #201c24;
 }
@@ -305,27 +307,32 @@ body {
     margin-bottom: 0px;
     color: white;
 }
-.koto
-{
+
+.koto {
     width: 500px;
     height: 700px;
 }
-.SwitchBlackDesign2023{
+
+.SwitchBlackDesign2023 {
     width: 500px;
     height: 700px;
 }
-.ReMarkeDevelopment2023{
+
+.ReMarkeDevelopment2023 {
     width: 500px;
     height: 700px;
 }
-.AnotherOneDevelopment2023{
+
+.AnotherOneDevelopment2023 {
     width: 500px;
     height: 700px;
 }
-.BlederRendersDesign+Development2023{
+
+.BlederRendersDesign+Development2023 {
     width: 500px;
     height: 700px;
 }
+
 .socialMedia {
     display: flex;
     flex-direction: row;

@@ -305,7 +305,27 @@ body {
     margin-bottom: 0px;
     color: white;
 }
-
+.koto
+{
+    width: 500px;
+    height: 700px;
+}
+.SwitchBlackDesign2023{
+    width: 500px;
+    height: 700px;
+}
+.ReMarkeDevelopment2023{
+    width: 500px;
+    height: 700px;
+}
+.AnotherOneDevelopment2023{
+    width: 500px;
+    height: 700px;
+}
+.BlederRendersDesign+Development2023{
+    width: 500px;
+    height: 700px;
+}
 .socialMedia {
     display: flex;
     flex-direction: row;

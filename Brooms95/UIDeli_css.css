@@ -1,0 +1,97 @@
+.container {
+    background-color: white;
+    width: 100%;
+}
+
+.barra {
+    background-color: #201c24;
+    height: 100px;
+}
+
+.x {
+    position: absolute;
+    right: 60px;
+    top: 38px;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+}
+
+.x:hover {
+    background-color: white;
+    border: transparent;
+}
+
+.center {
+    border-bottom: solid 2px grey;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 500px;
+}
+
+.textH4 {
+    margin-bottom: 0px;
+}
+
+.img {
+    width: 700px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.pointer {
+    border: transparent;
+    border-radius: 4em;
+    background-color: royalblue;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.visit {
+    font-size: 30px;
+}
+
+.text {
+    width: 500px;
+}
+
+.rightAll {
+    display: flex;
+    flex-direction: row;
+}
+
+.testemonials {
+    width: 250px;
+}
+
+.right {
+    margin-top: 75px;
+}
+
+.testemonials2 {
+    width: 250px;
+    margin-left: 40px;
+}
+
+.imgTestemonials {
+    width: 20px;
+    height: 20px;
+}
+
+.imgTestemonials2 {
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+.nomes {
+    margin-left: 40px;
+}

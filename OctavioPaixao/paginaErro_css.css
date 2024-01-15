@@ -1,0 +1,52 @@
+.container {
+    background-color: beige;
+    width: 100%;
+}
+
+.barra {
+    background-color: #201c24;
+    height: 100px;
+}
+
+.x {
+    position: absolute;
+    right: 60px;
+    top: 38px;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+}
+
+.x:hover {
+    background-color: white;
+    border: transparent;
+}
+
+.imgText {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.centerHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.buttonBack {
+    border: transparent;
+    border-radius: 4em;
+    width: 300px;
+    height: 75px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonBack:hover  {
+    background-color: royalblue;
+    border: solid 2px black;
+    border-radius: 4em;
+}

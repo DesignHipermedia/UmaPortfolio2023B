@@ -49,4 +49,11 @@ import BotaoRedondo from "./BotaoRedondo.vue"
         border-bottom: 2px solid grey ;
         font-size: 14px;
     }
+    @media only screen and (max-width: 760px) {
+
+.alinhamento{
+  max-width: 100%;
+}
+
+}
 </style>

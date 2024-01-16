@@ -1,4 +1,29 @@
-.UIDelicomgive {
-    width: 500px;
-    height: 700px;
+.textos {
+    display: flex;
+    justify-content: center;
+}
+
+.testemunhas {
+    display: flex;
+    justify-content: center;
+}
+
+.testemunha1 {
+    display: flex;
+    justify-content: center;
+}
+
+.testemunha2 {
+    display: flex;
+    justify-content: center;
+}
+
+.testemunha3 {
+    display: flex;
+    justify-content: center;
+}
+
+.testemunha4 {
+    display: flex;
+    justify-content: center;
 }

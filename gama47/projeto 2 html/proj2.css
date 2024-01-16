@@ -1,0 +1,148 @@
+@media only screen and (max-width: 540px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+    #pfp{
+        width: 150px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    .btn_base{
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: white;
+        margin: 5px;
+    }
+    #buttons{
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    #claro{
+        width: 50px;
+        height: 50px;
+    }
+    #escuro{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+    }
+    #st_proj{
+        border-radius: 10px;
+        background-color: darkgreen;
+        color: white;
+        font-weight: lighter;
+    }
+    a{
+        color: black;
+    }
+    #icon{
+        background-color: darkgreen;
+        width: 35px;
+        height: 35px;
+    }
+    #btn_all{
+        background-color: black;
+        color: white;
+    }
+    .footer{
+        padding: 10px;
+        background-color: darkgreen;
+        color: white;
+    }
+    .foot_anch{
+        color: white;
+        text-decoration: none;
+    }
+    #call{
+        text-decoration: underline;
+    }
+    .body_projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .card, a{
+        text-decoration: none;
+    }
+}
+@media only screen and (min-width: 541px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar_container{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+    #pfp{
+        width: 150px;
+        height: 200px;
+        border-radius: 100%;
+    }
+    .btn_base{
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: white;
+        margin: 5px;
+    }
+    #buttons{
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    #claro{
+        width: 50px;
+        height: 50px;
+    }
+    #escuro{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+    }
+    #st_proj{
+        border-radius: 10px;
+        background-color: darkgreen;
+        color: white;
+        font-weight: lighter;
+    }
+    a{
+        color: black;
+    }
+    #icon{
+        background-color: darkgreen;
+        width: 35px;
+        height: 35px;
+    }
+    #btn_all{
+        background-color: black;
+        color: white;
+    }
+    .footer{
+        padding: 10px;
+        background-color: darkgreen;
+        color: white;
+    }
+    .foot_anch{
+        color: white;
+        text-decoration: none;
+    }
+    #call{
+        text-decoration: underline;
+    }
+    .body_projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .card, a{
+        text-decoration: none;
+    }
+}

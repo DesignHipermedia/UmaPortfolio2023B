@@ -1,0 +1,331 @@
+.page-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.page-page {
+  width: 980px;
+  height: 1755px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.page-rectangle1 {
+  top: -6px;
+  left: 1px;
+  width: 968px;
+  height: 1755px;
+  position: absolute;
+}
+.page-sembacklogouma1 {
+  top: 0.6423680186271667px;
+  left: 399px;
+  width: 170px;
+  height: 69px;
+  position: absolute;
+}
+.page-line1 {
+  top: 68px;
+  left: 3px;
+  width: 398px;
+  height: 1px;
+  position: absolute;
+}
+.page-line2 {
+  top: 70px;
+  right: 13px;
+  width: 398px;
+  height: 1px;
+  position: absolute;
+}
+.page-line3 {
+  top: 126px;
+  left: 2px;
+  width: 968px;
+  height: 1px;
+  position: absolute;
+}
+.page-rectangle2 {
+  top: 80px;
+  left: 251px;
+  width: 149px;
+  height: 36px;
+  position: absolute;
+}
+.page-text {
+  top: 88px;
+  left: 310px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-rectangle4 {
+  top: 80px;
+  left: 414px;
+  width: 145px;
+  height: 36px;
+  position: absolute;
+}
+.page-text02 {
+  top: 88px;
+  left: 450px;
+  color: rgba(0, 0, 0, 1);
+  width: 125px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-rectangle5 {
+  top: 80px;
+  left: 570px;
+  width: 137px;
+  height: 36px;
+  position: absolute;
+}
+.page-text04 {
+  top: 88px;
+  left: 606px;
+  color: rgba(0, 0, 0, 1);
+  width: 119px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text06 {
+  top: 155px;
+  left: 57px;
+  color: rgba(0, 0, 0, 1);
+  width: 302px;
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text07 {
+  color: rgba(0, 0, 0, 1);
+}
+.page-text12 {
+  top: 252px;
+  left: 57px;
+  color: rgba(35, 185, 158, 1);
+  width: 378px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text13 {
+  color: rgba(0, 0, 0, 1);
+}
+.page-pexelsmikhailnilov8543136scaled1 {
+  top: 366px;
+  left: 104px;
+  width: 228px;
+  height: 175px;
+  position: absolute;
+}
+.page-text23 {
+  top: 252px;
+  left: 484px;
+  color: black;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text24 {
+  color: rgba(35, 185, 158, 1);
+}
+.page-conscientizacaoambientalsuarelacaocomoconsumodeene {
+  top: 366px;
+  left: 593px;
+  width: 228px;
+  height: 175px;
+  position: absolute;
+}
+.page-text34 {
+  top: 617px;
+  left: 57px;
+  color: black;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text35 {
+  color: rgba(35, 185, 158, 1);
+}
+.page-semana-do-meio-ambiente-destaque1 {
+  top: 743px;
+  left: 104px;
+  width: 228px;
+  height: 175px;
+  position: absolute;
+}
+.page-text45 {
+  top: 617px;
+  left: 486px;
+  color: rgba(0, 0, 0, 1);
+  width: 449px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text46 {
+  color: rgba(0, 0, 0, 1);
+}
+.page-text52 {
+  color: rgba(35, 185, 158, 1);
+}
+.page-image20210605diamundialdomeioambiente1 {
+  top: 743px;
+  left: 593px;
+  width: 228px;
+  height: 175px;
+  position: absolute;
+}
+.page-text56 {
+  top: 994px;
+  left: 57px;
+  color: rgba(35, 185, 158, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text57 {
+  color: rgba(0, 0, 0, 1);
+}
+.page-mobilidadesustentvelmissocontinentehead1 {
+  top: 1146px;
+  left: 104px;
+  width: 228px;
+  height: 175px;
+  position: absolute;
+}
+.page-text67 {
+  top: 994px;
+  left: 486px;
+  color: black;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text68 {
+  color: rgba(35, 185, 158, 1);
+}
+.page-exemplosavaliacaocompetenciascaled1 {
+  top: 1146px;
+  left: 593px;
+  width: 228px;
+  height: 175px;
+  position: absolute;
+}
+.page-text78 {
+  top: 1407px;
+  left: 406px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-text80 {
+  top: 1479px;
+  left: 52px;
+  color: rgba(35, 185, 158, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.page-comunidadefechada1 {
+  top: 1531px;
+  left: 372px;
+  width: 228px;
+  height: 175px;
+  position: absolute;
+}

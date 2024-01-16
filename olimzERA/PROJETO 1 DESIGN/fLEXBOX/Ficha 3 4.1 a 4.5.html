@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox3</title>
+</head>
+<body>
+    4.1
+    <div class="flex_container">
+    <div class="flex-item verde"> </div>
+    <div class="flex-item verde"> </div>
+    <div class="flex-item verde"> </div>
+    <div class="flex-item amarelo" hidden > </div>
+    <div class="flex-item vermelho"></div>
+    <div class="flex-item verde"> </div>
+    </div>
+
+    <div class="flex_container primeiro">
+        <div class="flex-item vermelho"></div>
+        <div class="flex-item verde"> </div>
+        <div class="flex-item verde"> </div>
+        <div class="flex-item verde"> </div>
+        <div class="flex-item amarelo" hidden > </div>
+        <div class="flex-item verde"> </div>
+
+    </div>
+    <p></p>
+    4.2
+    <div class="flex_container">
+        <div class="flex-item verde"> </div>
+        <div class="flex-item verde"> </div>
+        <div class="flex-item amarelo"> </div>
+        <div class="flex-item verde"> </div>
+        <div class="flex-item vermelho"hidden></div>
+        <div class="flex-item verde"> </div>
+        </div>
+    
+        <div class="flex_container segundo">
+            <div class="flex-item vermelho" hidden></div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item amarelo separado"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item verde"> </div>
+    
+        </div>
+        <p></p>
+        4.3
+        <div class="flex_container">
+            <div class="flex-item amarelo"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item amarelo"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item vermelho"hidden></div>
+            <div class="flex-item verde"> </div>
+            </div>
+        
+            <div class="flex_container segundo">
+                <div class="flex-item vermelho" hidden></div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item amarelo separado"> </div>
+                <div class="flex-item amarelo separado"> </div>
+            </div>
+            <p></p>
+            4.4
+        <div class="flex_container">
+            <div class="flex-item amarelo"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item verde"> </div>
+            <div class="flex-item vermelho"></div>
+            </div>
+        
+            <div class="flex_container segundo">
+                <div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item"> </div>
+                <div class="flex-item verde"> </div>
+                </div>
+                <div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item"></div>
+                <div class="flex-item vermelho"></div>
+                </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+        
+            </div>
+            <p></p>
+            4.5
+            <div class="flex_container">
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item vermelho"></div>
+                <div class="flex-item vermelho"></div>
+                <div class="flex-item vermelho"></div>
+                <div class="flex-item vermelho"></div>
+                <div class="flex-item vermelho"></div>
+                </div>
+                
+                <div>
+                <div class="flex_container terceiro">
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item verde"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item amarelo"> </div>
+                <div class="flex-item vermelho"> </div>
+                <div class="flex-item vermelho"> </div>
+                <div class="flex-item vermelho"> </div>
+                <div class="flex-item vermelho"> </div>
+                <div class="flex-item vermelho"> </div>
+                </div>
+                    
+                </div>
+            
+    <style>
+.flex_container{
+    display: flex;
+    background-color: rgb(224, 222, 222);
+    height: 250px;
+    width: 250px;
+    padding: 10px;     
+}
+.coluna{
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.separado{
+    align-self: flex-end;
+}
+.diferente{
+    align-items: center;
+}
+.primeiro{
+    margin-left: 280px;
+    padding: 10px;
+    margin-top: -270px;
+}
+.segundo{
+    margin-left: 280px;
+    padding: 10px;
+    margin-top: -270px; 
+}
+.terceiro{
+    margin-left: 280px;
+    padding: 10px;
+    margin-top: -270px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    justify-content:flex-end;
+}
+.verde{
+    background-color: green;   
+}
+.amarelo{
+    background-color: yellow;
+}
+.vermelho{
+    background-color: red;
+}
+    </style>
+</body>
+</html>

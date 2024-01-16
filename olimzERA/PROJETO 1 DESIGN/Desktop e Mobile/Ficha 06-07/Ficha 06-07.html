@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey;">
+<div class="container">
+    <div class="caixa caixa1">
+        <h2>Karma</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam error neque harum ea cum quo. Alias fugiat amet quidem illo eligendi libero aspernatur reiciendis modi, inventore, voluptate quisquam, quaerat explicabo!</p>
+        <img src="https://th.bing.com/th/id/R.c4fb8caeafa28f8e85c5bbc351abeb7c?rik=CODB0Y0EzFOpAA&pid=ImgRaw&r=0" class="imagem">
+    </div>
+    <div class="caixa caixa2">
+        <h2>Team Builder</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, ab dolorem veniam possimus similique laborum necessitatibus ducimus sequi. Minima quasi eaque obcaecati blanditiis voluptatum enim vel rerum deserunt nulla illum?</p>
+        <img src="https://th.bing.com/th/id/R.75acde9755fdc1ccba430e7c20f4317a?rik=4DSI22sfiFOKoA&pid=ImgRaw&r=0" alt="" class="imagem">
+    </div>
+    <div class="caixa caixa3">
+        <h2>Supervisor</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quasi tenetur, sit ea, nam aliquam fugiat sunt laborum veritatis, aut itaque necessitatibus? Nisi officia consectetur nam eius aspernatur placeat tenetur!</p>
+        <img src="https://th.bing.com/th/id/R.04bf386a8c94dbbbab6ca98b94bcd9e8?rik=Tifeo8sm488%2fHw&pid=ImgRaw&r=0" alt="" class="imagem">
+    </div>
+    <div class="caixa caixa4">
+        <h2>Calculator</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum perferendis quae dolores, exercitationem explicabo voluptates rem dolorem possimus animi, ratione repellat adipisci tempore nesciunt assumenda quidem illum architecto error. Voluptatibus.</p>
+        <img src="https://th.bing.com/th/id/R.b4ddb631e683728eb51166099bc8f757?rik=uj2xLW32yA%2fyMw&pid=ImgRaw&r=0" alt="" class="imagem">
+    </div>
+</div>
+</body>
+<style>
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    ' . c1 . '
+    'c2 c1 c3'
+    'c2 c4 c3'
+    ' . c4 . ';
+}
+@media (max-width:600px){
+    .container{
+        grid-template-areas: 
+        'c1'
+        'c2'
+        'c3'
+        'c4';
+    }
+}
+.caixa{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 250px;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 2px 1px 2px black;
+}
+.caixa1{
+    grid-area: c1;
+    border-top: solid red 4px;
+}
+.caixa2{
+    grid-area: c2;
+    border-top: solid blue 4px;
+}
+.caixa3{
+    grid-area: c3;
+    border-top: solid yellow 4px;
+}
+.caixa4{
+    grid-area: c4;
+    border-top: solid green 4px;
+}
+.imagem{
+    width: 75px;
+    align-self: flex-end;
+}
+</style>
+</html>

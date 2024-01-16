@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(195, 140, 248);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.collumsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.logo{
+    position: absolute;
+    max-width: 50px;
+    height: auto;
+    top: 20px;
+    left: 30px;
+}
+
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 449px;
+    height: 506px;
+}
+
+img{
+    width: 449px;
+    height: auto;
+}
+
+.rightSide{
+    width: 449px;
+    height: 506px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+    width: 300px;
+}
+
+h1{
+    width: 300px;
+}
+
+button{
+    width: 175px;
+    height: 25px;
+    margin-top: 20px;
+    background-color: blueviolet;
+}

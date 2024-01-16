@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox2</title>
+</head>
+<body>
+    3.11
+    <div class="flex_container primeiro">
+    <div class="flex-item verde"> </div>
+    <div class="flex-item amarelo" > </div>
+    <div class="flex-item vermelho"></div>
+    
+    </div>
+    <p></p>
+    3.12
+    <div class="flex_container segundo">
+        <div class="flex-item vermelho"></div>
+        <div class="flex-item amarelo" > </div>
+        <div class="flex-item verde" > </div>
+        
+        
+    </div>
+    <p></p>
+    3.13
+    <div class="flex_container terceiro">
+        <div class="flex-item vermelho"></div>
+        <div class="flex-item amarelo" > </div>
+        <div class="flex-item verde" > </div>  
+    </div>
+    <p></p>
+    3.14
+    <div class="flex_container quarto">
+        <div class="flex-item verde" > </div>
+        <div class="flex-item vermelho"></div>
+        <div class="flex-item amarelo" > </div>
+    </div>
+    <p></p>
+    
+    <style>
+.flex_container{
+    display: flex;
+    background-color: rgb(224, 222, 222);
+    height: 220px;
+    width: 220px;
+    padding: 10px;     
+}
+.primeiro{
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.segundo{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between
+    
+}
+
+.terceiro{
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.quarto{
+    justify-content: flex-start;
+    
+    align-items: flex-start;
+}
+
+.quinto{
+    justify-content: left;
+    align-items: flex-start;
+}
+.flex-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    justify-content:flex-end;
+}
+.verde{
+    background-color: green;
+    
+}
+.amarelo{
+    background-color: yellow;
+}
+.vermelho{
+    background-color: red;
+}
+    </style>
+</body>
+</html>

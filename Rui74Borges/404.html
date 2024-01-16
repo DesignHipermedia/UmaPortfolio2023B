@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+          html {
+                 padding: 0px;
+                 margin:0px;
+                 border:0px;
+            }
+            body {
+              padding: 0px;
+              margin:0px;
+              border:0px;
+            }
+            .div{
+                margin:25px;
+                width:70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+              .dark_div{
+                    margin:0px;
+                background-color: black;
+                color: white;
+            }
+             .grid3 {
+               display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(500px, 1fr) );
+               
+            }
+            .grid-element {
+                  padding: 20px;
+                  vertical-align=middle;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin-top:50px;
+                  
+                }
+                .border {
+                 border: 1px solid grey;
+                 padding: 20px;
+                border-radius: 50px;
+                }
+        </style>
+    </head>
+    <body>
+        
+        <div class="dark_div"><p style="margin:0px;" align="right"><img src="img/close.png" onclick="history.back()"/><br></p></div>
+        <div class="div">
+            <p>Desenvolva o seu proprio design</p><br/><br/><br/><br/>
+            <h1>OOOpppsss!!!</h1>
+            <p><strong>Ocorreu um erro</strong></p>
+            <br/><br/>
+             <span class="border">
+                <span class="textActive" id="d1" onclick="history.back()">Home</span>
+            </span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/467497162/pt/foto/c%C3%A2mara-de-lobos-madeira.jpg?s=612x612&w=0&k=20&c=NtUWDkoxHHPpuFCMExibFKJyDvuc8vqBOFbd5WZ-qIc=");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+p {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

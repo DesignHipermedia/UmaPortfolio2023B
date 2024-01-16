@@ -7,7 +7,7 @@ import BotaoRedondo from "../components/BotaoRedondo.vue";
     <div class="preto"></div>
     <div class="corpo">
       <div class="cima">
-        <div class="cabecalho">
+        <div class="cabecalhosegunda">
           <div class="textpequeno">ReMarket</div>
           <h1 class="textgrande">
             Helping ReMarket give their users the best online experience.
@@ -108,7 +108,6 @@ import BotaoRedondo from "../components/BotaoRedondo.vue";
 .preto {
   background-color: black;
   height: 100px;
-  margin: 20px;
   width: 100%;
 }
 .textpequeno {
@@ -170,5 +169,17 @@ import BotaoRedondo from "../components/BotaoRedondo.vue";
 .headerft {
   height: 30px;
   width: 30px;
+}
+@media only screen and (max-width: 760px) {
+  .textogrande{
+    width: 100%;
+  }
+.partebaixo {
+  flex-direction: column;
+}
+.testimonials{
+  grid-template-columns: 1fr;
+}
+
 }
 </style>

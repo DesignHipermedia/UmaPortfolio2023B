@@ -70,7 +70,7 @@ import BotaoRedondo from "./BotaoRedondo.vue";
     margin: 20pxs;
     display: flex;
     flex-direction: column;
-    
+    padding: 0 10px;
 }
 .alinhamento{
     max-width: 1000px;
@@ -178,5 +178,11 @@ import BotaoRedondo from "./BotaoRedondo.vue";
     justify-content: space-around;
     width: 30%;
     
+}
+@media only screen and (max-width: 760px) {
+.assuntos{
+    flex-direction: column;
+}
+
 }
 </style>

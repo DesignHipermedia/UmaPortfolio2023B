@@ -1,5 +1,9 @@
 <script setup>
 import Botao from "./Botao.vue"
+/*
+  images = [{image:"imagem1.png", "titulo": "Udlei"}]
+     for im in images:
+*/
 </script>
 <template>
 <div class="tudo">
@@ -131,5 +135,10 @@ import Botao from "./Botao.vue"
 .headerft{
     width: 100%;
 }
+@media only screen and (max-width: 760px) {
+.imagens{
+    grid-template-columns: 1fr;
+}
 
+}
 </style>

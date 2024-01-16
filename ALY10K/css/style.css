@@ -1,0 +1,928 @@
+:root{
+    --social-bg: #FDFAF6;
+    --social-card-bg: blueviolet;
+    --social-text:black;
+    --social-card-text:var(--social-text);
+    --borders: 1px solid rgba(0, 0, 0, 0.2);
+    --shadow: 0px 0px 35px -27px rgb(0, 0, 0) inset;
+}
+
+:root:has(#dark:checked){
+    --social-bg:#191919;
+    --social-card-bg: var(--gray-8);
+    --social-text: white;
+    --social-card-text:var(--social-text);
+    --borders: 1px solid rgba(255, 255, 255, 0.329);
+    --shadow: 0px 0px 35px -27px rgb(255, 255, 255) inset;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: default;
+}
+
+body{
+    /* margin: 2% 10% 0 10%; */
+    background-color: var(--social-bg);
+    color: var(--social-text);
+    transition: background-color .4s ease 0s, color .6s ease 0s;
+}
+
+.header {
+    /* background-color: grey; */
+    margin: 1% 5% 0 5%;
+    /* width: 100%; */
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header img {
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#options {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-left: auto;
+}
+#menu {
+    height: 60px;
+    border: var(--borders);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu li {
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#a1:hover {
+    border-right: var(--borders);
+    border-radius: 35px;
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    transition: box-shadow .3s, -webkit-box-shadow .3s, -moz-box-shadow .3s;
+}
+#a2:hover {
+    border-right: var(--borders);
+    border-left: var(--borders);
+    border-radius: 35px;
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    transition: box-shadow .3s, -webkit-box-shadow .3s, -moz-box-shadow .3s;
+}
+#a3:hover {
+    border-left: var(--borders);
+    border-radius: 35px;
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    transition: box-shadow .3s, -webkit-box-shadow .3s, -moz-box-shadow .3s;
+}
+#menu a {
+    text-decoration: none;
+    margin: 0 35px 0 35px;
+    color: var(--social-text);
+    font-size: 18px;
+    cursor: pointer;
+}
+.toggle_btn {
+    color: var(--social-text);
+    width: 57px;
+    height: 57px;
+    padding: 10px;
+    border: var(--borders);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    display: none;
+}
+
+.switch {
+    width: 55px;
+    height: 55px;
+    border: var(--borders);
+    background-color: transparent;
+    color: var(--social-text);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switch input {
+    position: absolute;
+    opacity: 0;
+}
+.switch-uideli {
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent;
+    color: var(--social-text);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.switch-uideli input {
+    position: absolute;
+    opacity: 0;
+}
+
+.sun {
+    position: absolute;
+    font-size: 3em;
+    color: #666;
+    filter: drop-shadow(0 0 2px rgba(255, 238, 0, 0.678));
+    transform: scale(0);
+    transition: 1s ease;
+}
+input:checked~.sun{
+    transition-delay: .5s;
+    transform: scale(1) rotate(360deg) ;
+}
+
+.moon {
+    font-size: 3em;
+    color: #666;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.651));
+    transition: 1s ease;
+    transition-delay: .5s;
+}
+input:checked~.moon{
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+/*###########          Menu drop          ###############*/
+#check{
+    display: none;
+}
+.checkbtn{
+    width: 55px;
+    height: 55px;
+    color: var(--social-text);
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+}
+.checkbtn svg {
+    margin-top: 10px;
+}
+.links {
+    border: var(--borders);
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 20px;
+}
+.links ul {
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.links ul li {
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+.links ul li a {
+    text-decoration: none;
+    margin: 0 35px 0 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*###########    ^^^   Menu drop    ^^^   ###############*/
+
+
+
+
+
+
+/*###########          1ª section          ###############*/
+#perfil {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+#perfil button {
+    border: none;
+    background-color: #1f1e26;
+    color: white;
+    width: 175px;
+    height: 60px;
+    border-radius: 35px;
+    font-size: 16px;
+}
+#perfil button:hover {
+    background-color: #4b485e;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+#projeto h1 {
+    font-weight: 400;
+    font-size: 55px;
+    width: 55%;
+    padding-bottom: 10px;
+}
+#projeto p {
+    font-size: 20px;
+    width: 45%;
+    padding-bottom: 30px;
+}
+#apresentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 90%;
+    margin-left: auto;
+    margin-top: -5px;
+}
+#apresentation p {
+    font-size: 30px;
+    width: 70%;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+hr {
+    margin: 2% 5% 0 5%;
+    opacity: 0.5;
+}
+a {
+    color: var(--social-text);
+    text-decoration: none;
+    text-decoration: underline;
+}
+#download-resume {
+    width: 70%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 150px;
+}
+#start-project {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 150px;
+}
+#textx {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#text1 {
+    font-family: sans-serif;
+}
+#download-resumeB {
+    width: 70%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.style-setup{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: #483ed0;
+    border-radius: 50%;
+    padding: 1vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-interview{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    width: 20vh;
+    padding: 2vh;
+    color: black;
+    margin-right: 2%;
+    background-color: transparent;
+    transition: background-color .6s ease 0s, color .6s ease 0s;
+    background-color: #1f1e26;
+    color: white;
+    text-decoration: none;
+    font-size: 2vh
+}
+#download-resume a,
+#download-resume a svg{
+    cursor: pointer;
+}
+
+#arrow {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: #483ed0;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-content: center;
+}
+
+#arrow2 {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    background-color: #483ed0;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    align-content: center;
+}
+
+#arrow svg {
+    width: 18px;
+    height: 18px;
+}
+/*###########          1ª section          ###############*/
+
+
+/*###########          2ª section          ###############*/
+.works-section {
+    margin: 0 5% 0 5%;
+}
+
+#theworkido{
+    font-size: 40px;
+    margin: 30px 0 20px 0;
+}
+.buttons-work {
+    background-color: transparent;
+    border: var(--borders);
+    border-radius: 35px;
+    padding: 20px 30px 20px 30px;
+    margin-right: 10px;
+    color: var(--social-text);
+    font-size: 16px;
+}
+.buttons-work:hover{
+    background-color: var(--social-text);
+    transition: 400ms;
+    color: var(--social-bg);
+    cursor: pointer;
+}
+#load-more {
+    margin: 0 auto;
+    display: block;
+    padding: 20px 30px 20px 30px;
+    font-size: 16px;
+}
+.works {
+    margin-top: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'c1 c2 '
+    'c4 c3 '
+    'c6 c5 ';
+    gap: 100px;
+}
+.works img {
+    width: 100%;
+    height: auto;
+    max-width: 710px;
+    cursor: pointer;
+}
+.card {
+    position: relative;
+    width: 100%;
+}
+.card h1 {
+    font-weight: 400;
+    font-size: xx-large;
+    padding: 20px 0 10px 0;
+}
+.card label {
+    padding-left: 20px;
+}
+#c1{
+    grid-area: c1;
+    height: auto;
+}
+#c2{
+    grid-area: c2;
+    height: auto;
+}
+#c3{
+    grid-area: c3;
+    transform: translateY(-150px);
+}
+#c4{
+    grid-area: c4;
+}
+#c5{
+    grid-area: c5;
+    transform: translateY(-150px);
+}
+#c6{
+    grid-area: c6;
+}
+
+/*###########          2ª section          ###############*/
+
+/*###########          3ª section          ###############*/
+
+.footer {
+    background-color: #1f1e26;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.link-cards-section {
+    width: auto;
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+.link-cards {
+    width: 100%;
+}
+.link-cards p {
+    width: 100%;
+    margin-top: 30px;
+}
+.link-cards label {
+    color: rgba(128, 128, 128, 0.678);
+    font-size: 16px;
+}
+#help-title{
+    font-weight: 400;
+    margin: 100px 5% 60px 5%;
+    font-size: 55px;
+}
+.link-cards h1 {
+    font-weight: 400;
+    border-top: 1px solid rgba(128, 128, 128, 0.678);
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: 35px;
+}
+.link-cards li {
+    list-style: none;
+}
+.link-cards li a {
+    font-size: 22px;
+    margin: 15px 0 0 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+.link-cards li a:hover {
+    color: rgb(139, 139, 139);
+    transition: text-decoration .2s ease .2s;
+    
+}
+.anim-links {
+    position: relative;
+    color: white;
+}
+.anim-links:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(139, 139, 139);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.anim-links:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.month-pack {
+    margin: 6% 5% 0 5%;
+}
+.month-pack h1 {
+    font-weight: 300;
+    font-size: 32px;
+    width: 90%;
+    margin-top: 50px;
+}
+.month-pack h2 {
+    font-weight: 400;
+    font-size: 50px;
+    margin: 25px 0 25px 0;
+}
+.month-pack h2 label {
+    font-weight: 200;
+    margin-left: 8px;
+    font-size: 14px;
+}
+.month-pack p {
+    width: 65%;
+    font-weight: 200;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+#project-footer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.month-pack img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#b1 {
+    border: none;
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 55px;
+    border-radius: 35px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+#b1:hover {
+    background-color: #4b485e;
+    color: white;
+    transition:  0.3s ease-out;
+}
+#b2 {
+    border: none;
+    background-color: #483ed0;
+    color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#b2:hover {
+    background-color: #342d97;
+    color: white;
+    transition:  0.3s ease-out;
+}
+#call{
+    font-size: 17px;
+}
+#call a {
+    margin-left: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.social-media {
+    margin: 0 5% 0 5%;
+}
+.social-media p {
+    color: rgb(139, 139, 139);
+    padding-bottom: 15px;
+}
+.social-media hr {
+    margin: 0 0 30px 0;
+}
+.social-media li{
+    list-style: none;
+    margin-bottom: 50px;
+}
+.social-media li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 10px 0 0;
+    cursor: pointer;
+}
+.social-media li a:hover {
+    color: rgb(139, 139, 139);
+    transition:  0.3s ease-out;
+}
+
+/*###########          3ª section          ###############*/
+
+
+
+
+/*############################################        UIDELI.COM          ###########################################################*/
+#testeeeee {
+    background-color: var(--social-bg);
+}
+.head-uideli {
+    background: #1f1e26;;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.head-uideli button {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: white;
+    margin-right: 3%;
+    background-color: transparent;
+    transition: background-color .6s ease 0s, color .6s ease 0s;
+}
+.head-uideli button:hover {
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+.uideli {
+    margin: 6% 15% 0 15%;
+}
+.uideli img {
+    display: flex;
+    width: 100%;
+}
+.uideli p {
+    font-weight: 500;
+    font-size: 30px;
+}
+.uideli h1 {
+    font-weight: 500;
+    font-size: 85px;
+    margin: 30px 0 50px 0;
+}
+.uideli hr {
+    
+    margin: 65px 0 50px 0;
+}
+.about-uideli {
+    margin: 6% 15% 0 15%;
+    height: 1000px;
+}
+#visit-web {
+    width: 220px;
+} 
+.about-uideli a {
+    font-size: 25px;
+    cursor: pointer;
+}
+.about-uideli a:hover {
+    font-size: 25px;
+    cursor: pointer;
+    color: gray;
+    transition: .3s;
+}
+#b3 {
+    border: none;
+    background-color: #1f1e26;;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#b3:hover {
+    background-color: #4b485e;
+    transition: .3s;
+}
+.Box_coluna {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+.Box_coluna__args1 {
+    width: 110%;
+}
+.Box_coluna__args2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.Box_coluna__args2 h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+.box_Testimonials {
+    display: flex;
+    flex-direction: row;
+}
+.app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box_Testimonials img {
+    border-radius: 50%;
+}
+.comments {
+    flex: 0 0 calc(50% - 10px);
+    /* width: 50%; */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.comments p {
+    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+}
+.comments label {
+    font-weight: bold;
+}
+.GetAvatarsUsers {
+    margin-left: auto;
+    display: flex;
+}
+.GetAllUsers{
+    margin-left: auto;
+    display: flex;
+}
+
+
+/*############################################   ^^^   UIDELI.COM   ^^^   ###########################################################*/
+
+/*Responsive*/
+
+@media(max-width: 768px){
+    .header img{
+        width: 120px;
+    }
+    #projeto h1 {
+        font-size: 45px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    #projeto p {
+        width: 100%;
+    }
+    #menu,
+    .buttons{
+        display: none;
+    }
+    .buttons-work {
+        padding: 15px 20px 15px 20px
+    }
+    .toggle_btn{
+        display: block;
+    }
+    .menu_drop{
+        display: block;
+    }
+    #apresentation p,
+    #apresentation {
+        margin-top: 40px;
+        width: 100%;
+    }
+    #download-resume {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .works {
+        grid-template-areas:
+        'c1'
+        'c2'
+        'c4'
+        'c3'
+        'c6'
+        'c5';
+    }
+    #c3,
+    #c5 {
+        transform: translateY(0px);
+    }
+    #load-more{
+        margin-top: 50px;
+    }
+
+    .works img {
+        width: 100%;
+        height: auto;
+    }
+    .link-cards-section{
+        flex-direction: column;
+    }
+    .month-pack p {
+        width: 100%;
+    }
+    .Box_coluna {
+        flex-direction: column;
+    }
+    .box_Testimonials {
+        flex-direction: column;
+    }
+    .app {
+        flex-direction: column;
+    }
+    .comments {
+        width: 100%;
+    }
+    .GetAllUsers{
+        display: flex;
+        margin-left: auto;
+        flex-wrap: wrap;
+    }
+
+
+/*############################################        UIDELI.COM          ###########################################################*/
+
+    .uideli h1 {
+        font-size: 40px;
+    }
+    #visit-web {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    #b3 {padding-top: 5px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+
+/*############################################   ^^^   UIDELI.COM   ^^^   ###########################################################*/
+
+/*###########          Menu drop          ###############*/
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #check:checked + .links + body,
+    #check:checked + .links + div {
+        overflow: hidden;
+    }
+    .checkbtn{
+        display: block;
+    }
+    .links ul li a {
+        color: white;
+        font-size: 26px;
+        line-height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .links ul li {
+        display: block;
+        margin: 60px 0;
+    }
+    .links ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1f1e26;;
+        top: 240px;
+        left: -100%;
+        transition: all .5s;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 1;
+    }
+/*###########    ^^^   Menu drop    ^^^   ###############*/
+}
+
+body.no-scroll {
+    overflow: hidden;
+}

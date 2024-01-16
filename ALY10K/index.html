@@ -3,10 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Hipermédia</title>
+    <title>Design Hipermédia - Projeto 02 Énio Freitas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f1139a9839.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Projeto 2</h1>
-    <h2>test prime</h2>
+
+    <header class="header">
+        <img src="images/avatar.png" alt="">
+        <label id="textx">&copy John Smith</label>
+        <div id="options">
+            <nav class="links">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                </label>
+                <ul>
+                    <li id="a1"><a href="error.html">About</a></li>
+                    <li id="a1"><a href="error.html">Work</a></li>
+                    <li id="a1"><a href="error.html">Solutions</a></li>
+                </ul>
+            </nav>
+            <label class="switch">
+                <input id="dark" type="checkbox">
+                <svg name="sunny" class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg name="moon" class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </label> 
+        </div>
+    </header>
+    <br>
+    <section id="perfil">
+        <div id="projeto">
+            <h1 id="text1"> I'm DH, and I turn ideas into digital experiences that people love.</h1>
+            <br>
+            <p id="textx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>    
+        </div>
+        <br>
+        <div id="start-project">
+            <button onclick="window.location.href='error.html';">Start a project</button>
+            <a href="error.html">
+                <div id="arrow2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                        <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <!-- <button onclick="window.location.href='error.html';">Start a project</button>
+        <div id="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </div> -->
+        <div id="apresentation">
+            <p id="p1">Welcome, make yourself at home. I am a multidisciplinary web designer, designing and building beautiful digital products, for companies around the world.</p>
+            <p id="p2">I believe that design should be both functional and aesthetically pleasing, and I am dedicated to delivering exceptional user experiences through thoughtful design and meticulous attention to detail.</p>
+            <div id="download-resume">
+                <a href="error.html">Download resume</a>
+                <a href="error.html">
+                    <div id="arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                            <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+    </section>
+    <hr>
+      
+    <section class="works-section">
+        <h1 id="theworkido">The work I do</h1>
+        <div>
+            <button class="buttons-work" onclick="window.location.href='error.html';">All</button>
+            <button class="buttons-work" onclick="window.location.href='error.html';">Design</button>
+            <button class="buttons-work" onclick="window.location.href='error.html';">Development</button>
+        </div>
+        <div class="works">
+            <div id="c1" class="card">
+                <a href="uideli.html"><img src="images/1.png" alt=""></a>
+                <h1>UIDeli.com</h1>
+                <p>Design + Development<label>2023</label></p>
+            </div>
+            <div id="c2" class="card">
+                <a href="error.html"><img src="images/2.png" alt=""></a>
+                <h1>Koto Studio</h1>
+                <p>Development<label>2023</label></p>
+            </div>
+            <div id="c3" class="card">
+                <a href="error.html"><img src="images/3.png" alt=""></a>
+                <h1>ReMarket</h1>
+                <p>Development<label>2023</label></p>
+            </div>
+            <div id="c4" class="card">
+                <a href="error.html"><img src="images/4.png" alt=""></a>
+                <h1>Switch Black</h1>
+                <p>Design<label>2023</label></p>
+            </div>
+            <div id="c5" class="card">
+                <a href="error.html"><img src="images/5.png" alt=""></a>
+                <h1>Blender Renders</h1>
+                <p>Design + Development<label>2023</label></p>
+            </div>
+            <div id="c6" class="card">
+                <a href="error.html"><img src="images/6.png" alt=""></a>
+                <h1>Another One</h1>
+                <p>Development<label>2023</label></p>
+            </div>
+        </div>
+        <div>
+            <button id="load-more" class="buttons-work" onclick="window.location.href='error.html';">Load more</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h1 id="help-title">I can help you with</h1>
+        <div class="link-cards-section">
+            
+            <div class="link-cards">
+                <label>01</label>
+                <h1>Design</h1>
+                <p>Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <li>
+                    <a class="anim-links" href="error.html">Websites</a>
+                    <a class="anim-links" href="error.html">Mobile apps</a>
+                    <a class="anim-links" href="error.html">Web apps</a>
+                    <a class="anim-links" href="error.html">Design systems</a>
+                    <a class="anim-links" href="error.html">Branding</a>
+                </li>
+            </div>
+            <div class="link-cards">
+                <label>02</label>
+                <h1>Development</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <li>
+                    <a class="anim-links" href="error.html">Websites</a>
+                    <a class="anim-links" href="error.html">Mobile apps</a>
+                    <a class="anim-links" href="error.html">Web apps</a>
+                </li>
+            </div>
+            <div class="link-cards">
+                <label>03</label>
+                <h1>Full Package</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                <li>
+                    <a class="anim-links" href="error.html">Design + Development</a>
+                </li>
+            </div>
+        </div>
+        <div class="month-pack">
+            <h1>Get the Full Package, Design + Development with requests & revisions. No expensive hourly billing. Flat monthly rate.
+                Pause anytime.</h1>
+            <h2>$2999<label>/month</label></h2>
+            <p>Ideal for websites, web aps, and brand design projects, custom code solutions, blogs and app dashboard design.</p>
+            <div id="project-footer">
+                <img src="images/avatar.png" alt="Avatar">
+                <button id="b1" onclick="window.location.href='error.html';">Start a project</button>
+                <button id="b2" onclick="window.location.href='error.html';">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right">
+                        <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <p id="call">Don t know if fits you or not?<a href="error.html">Let s have a call</a></p>
+
+        </div>
+
+        <div class="social-media">
+            <p>SOCIAL MEDIA</p>
+            <hr>
+            <li>
+                <a class="anim-links" href="error.html">Twitter</a>
+                <a class="anim-links" href="error.html">Linkedin</a>
+                <a class="anim-links" href="error.html">Github</a>
+                <a class="anim-links" href="error.html">Dribbble</a>
+            </li>
+        </div>
+
+
+    </section>
+
+
+    <script>
+        const checkbox = document.getElementById('check');
+    
+        checkbox.addEventListener('change', function () {
+            document.body.classList.toggle('no-scroll', this.checked);
+        });
+    </script>
 </body>
 </html>

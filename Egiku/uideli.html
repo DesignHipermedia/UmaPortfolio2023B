@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIDeli</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+
+<body id="teste">
+  <div class="head-uideli">
+    <label class="switch-uideli">
+      <input id="dark" type="checkbox">
+      <svg name="sunny" class="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <svg name="moon" class="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </label>
+
+    <button onclick="document.location='index.html'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <section class="uideli">
+    <p>UIDeli.com</p>
+    <h1>Helping UIDeli.com give their users the best online experience.</h1>
+    <img src="images/7.png" alt="">
+    <hr>
+  </section>
+  <section class="about-uideli">
+
+    <main class="Box_coluna">
+      <section class="Box_coluna__args1">
+        <div id="visit-web">
+          <a href="error.html"> Visit website</a>
+          <button onclick="window.location.href='error.html';" id="b3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-arrow-up-right">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="Box_coluna__args2">
+
+        <div class="boxA">
+          <h2>About uideli.com</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+        <div class="boxA">
+          <h2>The project</h2>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <div class="boxA">
+          <h2>The project</h2>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <div class="boxA">
+          <h2>Testimonials</h2>
+          <div class="box_Testimonials">
+            <div class="app">
+              <div class="comments" v-for="(testimonial, index) in testimonials" :key="testimonial.id">
+                <img :src="getAvatarUrl(index)" alt="Avatar" width="50" height="50" />
+                <p>{{ testimonial.comment }}</p>
+                <label>{{ testimonial.author }}</label>
+              </div>
+              <div class="GetAllUsers">
+                <div v-for="(avatar, index) in allAvatarsUsers" :key="index">
+                  <img :src="avatar" alt="Avatar" width="50" height="50" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </section>
+
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          testimonials: [],
+          avatars: [],
+          allAvatarsUsers: [],
+        };
+      },
+      mounted() {
+        this.fetchData();
+      },
+      methods: {
+        async fetchData() {
+          try {
+            const testimonialsResponse = await axios.get('https://jsonplaceholder.typicode.com/comments?_limit=4');
+            const avatarsResponse = await axios.get('https://api.github.com/repos/DesignHipermedia/UmaPortfolio2023B/contributors');
+            this.testimonials = testimonialsResponse.data.map(comment => {
+              return {
+                id: comment.id,
+                comment: comment.body,
+                author: 'anonimo' + comment.id,
+              };
+            });
+            this.allAvatarsUsers = avatarsResponse.data.map(contributor => contributor.avatar_url);
+            this.avatars = avatarsResponse.data.map(contributor => {
+              return {
+                id: contributor.id,
+                avatar_url: contributor.avatar_url,
+              };
+            });
+            console.log('Avatars:', this.avatars);
+          } catch (error) {
+            console.error('Erro ao buscar dados da API:', error);
+          }
+        },
+        getAvatarUrl(index) {
+          const avatar = this.avatars[index];
+          return avatar ? avatar.avatar_url : 'https://via.placeholder.com/50';
+        },
+      },
+    });
+    app.mount('.app');
+  </script>
+</body>
+
+</html>

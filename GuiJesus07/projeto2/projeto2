@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body">
+<header class="header">
+    
+    <h4 class="Title1">© DH Smith</h4>
+<nav></nav>
+</header>
+<section class="section1">
+<h2><strong>I'm DH, and I turn ideas into digital 
+    experiences that people love</strong></h2>
+
+
+</section>
+</body>
+<style>
+.body{
+    background-color: white;
+}
+.header{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.imagem1{
+    border-radius: 90px;
+}
+.section1{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+</style>
+
+</html>

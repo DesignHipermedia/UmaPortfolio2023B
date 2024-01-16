@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="app"> 
+        <h2>Lista de Tarefas</h2>
+        <input type="text" v-model="texto">
+        <button @click="InsereTarefa(texto)">Inserir</button>
+        <ul>
+            <li v-for="item in tarefas"
+            :class="{realizada: item.realizada, prioritario: item.prioritario}"
+            @click="realizaTarefa(item)">
+              {{item.nome}}
+            </li>
+        </ul>
+     </div>
+     <script src="https://unpkg.com/vue@3"></script>
+     <script>
+        Vue.createApp({
+          data () {
+           return {
+             texto : '',
+             tarefas: [{
+                       nome: 'Exercício de HTML',
+                       prioritario: false,
+                       realizada: true
+             },{ 
+                      nome: 'Exercício de CSS',
+                      prioritario: false,
+                      realizada: false
+             },{      
+                      nome: 'Exercício de Javascript',
+                      prioritario: false,
+                      realizada: false
+             },{   
+                     nome: 'Exercício de VueJS',
+                     prioritario: true,
+                     realizada: false
+             }, {
+                     nome: 'Juntar tudo no Projeto 1',
+                     prioritario: false,
+                     realizada: false
+             }, ]
+          }
+          methods:{
+              realizaTarefa(item){
+                 item.realizada = !item.realizada
+
+              };
+              InsereTarefa() {
+                  if (!!this.novaTarefa){
+                      this.tarefas.push({
+                         nome: this.novaTarefa,
+                         prioritario: false,
+                         realizada: false
+                      })
+                      this.novaTarefa = ''
+                  }
+              }
+
+          }
+        }
+        }).mount('#app')
+      </script>
+      <style>
+      .realizada{
+        text-decoration: line-through;
+        color: grey;
+      }
+      .prioritario {
+        color: red;
+      }
+
+      </style>
+
+</body>
+</html>

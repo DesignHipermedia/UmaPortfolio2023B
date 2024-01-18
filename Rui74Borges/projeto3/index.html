@@ -208,12 +208,21 @@
   height: 257px;
   top: 454px;
   left: 138px;
-  background-image: url("img/reciclagem_RB.png");
   background-size: cover;
   background-position: 50% 50%;
 }
-
+.hoverable-button:hover + .display-on-hover {
+  display: block;
+   position: relative;
+    z-index: 10;
+    right:0px;
+    bottom:0px;
+}
+.display-on-hover {
+    display: none;
+}
     </style>
+
   </head>
   <body>
     <div class="homepage">
@@ -228,19 +237,23 @@
             </div>
             </a>
           </div>
-          <img class="bg-hero-residuos-eco" src="img/bg-hero-residuos-eco.png" />
+          <img class="bg-hero-residuos-eco" src="img/bg-hero-residuos-eco.jpg" />
           <div class="text-wrapper-2">Reciclagem</div>
           <a href="https://arm.pt/comunicacao-e-educacao/educacao-ambiental/" target="_blank" rel="noopener noreferrer"
             ><div class="overlap-group-wrapper">
               <div class="div-wrapper"><div class="text-wrapper-3">O que fazer?</div></div>
             </div></a
-          >
+          ><div class="hoverable-button">
           <div class="group-2">
+              <a href="alerta.html">
             <div class="overlap-2">
-              <div class="rectangle-2"></div>
-              <div class="text-wrapper-4">O que não fazer!</div>
-            </div>
-          </div>
+              <div class="hoverable-button"><div class="rectangle-2"></div></div>
+             <div class="hoverable-button"> <div class="text-wrapper-4">O que não fazer!</div></div>
+              
+                
+                </div>
+            </a>
+          </div></div>
           <a
             href="https://www.youtube.com/watch?v=ICyutt3iQ2g&pp=ygUfYSBpbXBvcnTDom5jaWEgZGEgcmVjaWNsYWdlbSBwdA%3D%3D"
             target="_blank"
@@ -252,10 +265,16 @@
               </div>
             </div></a
           >
-          <div class="group-4"></div>
+          <div class="group-4"><img   src="img/reciclagem.jpg"  usemap="#workmap">
+<p>Clique no contentor para saber o que fazer</p>
+                <map name="workmap">
+                     <area shape="rect" coords="106,60, 342, 280 " href="papel.html"> 
+                     <area shape="rect" coords="368,68,588,274 " href="vidro.html"> 
+                     <area shape="rect" coords="638,64,872,264 " href="plastico.html"> 
+                </map>
+ </div>
         </div>
       </div>
     </div>
   </body>
 </html>
-
